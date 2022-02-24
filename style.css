@@ -1,14 +1,15 @@
-@charset "UTF-8";
 /* SCSS RGB */
 body, html {
   margin: 0;
+  background-color: #6c2d67;
+  font-family: Roboto, sans-serif;
 }
 
 div {
   display: flex;
 }
 
-.background .img {
+.header .img {
   background-image: url("background.jpg");
   height: 100%;
   width: 100%;
@@ -18,7 +19,7 @@ div {
   filter: blur(4px);
   -webkit-filter: blur(4px);
 }
-.background .overlay {
+.header .overlay {
   background-color: #6c2d67;
   color: #e3e3da;
   position: absolute;
@@ -26,7 +27,7 @@ div {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.background .overlay .text {
+.header .overlay .text {
   font-family: Roboto, serif;
   text-align: center;
   line-height: 60%;
@@ -34,44 +35,28 @@ div {
   padding-right: 30px;
   position: relative;
 }
-.background .overlay .text .smaller_text {
+.header .overlay .text .smaller_text {
   font-family: "Times New Roman", Times, serif;
   font-size: 0.5em;
   margin-bottom: 0;
 }
 
-/*
-#background_img {
-
-    // Imagem de fundo
-    background-image: url("background.jpg");
-
-    // Configurações do display da imagem
-    height: 100%;
-    width: 100%;
-    //margin: -1em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    // Efeito de blur
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-
-    //Configurações do display
-
+.background {
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 65%;
 }
 
-#background_img_overlay {
-    background-color: $palatinate-purple;
-    color: $alabaster;
-    font-family: Roboto, serif;
-    position: absolute;
-    top: 40%;
-    left: 15%;
-    font-size: 20px;
-    text-align: center;
+p, ul, ol, a {
+  color: #e3e3da;
+  text-align: center;
 }
-*/
+
+h1, h2, h3, h4, h5 {
+  color: #c9cdc1;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */

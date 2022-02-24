@@ -7,6 +7,8 @@ $alabaster: rgba(227, 227, 218, 1);
 
 body, html {
     margin: 0;
+    background-color: $palatinate-purple;
+    font-family: Roboto, sans-serif;
 }
 
 div {
@@ -14,7 +16,7 @@ div {
 }
 
 
-.background {
+.header {
     .img {
         // Imagem de fundo
         background-image: url("background.jpg");
@@ -60,37 +62,20 @@ div {
     }
 }
 
-
-/*
-#background_img {
-
-    // Imagem de fundo
-    background-image: url("background.jpg");
-
-    // Configurações do display da imagem
-    height: 100%;
-    width: 100%;
-    //margin: -1em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    // Efeito de blur
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-
-    //Configurações do display
-
+.background {
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 65%;
 }
 
-#background_img_overlay {
-    background-color: $palatinate-purple;
+p, ul, ol, a {
     color: $alabaster;
-    font-family: Roboto, serif;
-    position: absolute;
-    top: 40%;
-    left: 15%;
-    font-size: 20px;
     text-align: center;
 }
-*/
+
+h1, h2, h3, h4, h5 {
+    color: $ash-gray;
+    text-align: center;
+}
