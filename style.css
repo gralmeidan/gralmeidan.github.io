@@ -1,5 +1,13 @@
-#background {
+#background_img {
+  background-image: url("background.jpg");
+  height: 1080px;
   margin: -1em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
