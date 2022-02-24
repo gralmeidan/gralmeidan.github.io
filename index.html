@@ -2,59 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <h1 id="title">Geraldo Rodrigues de Almeida Neto</h1>
-    <img 
+
+    <div id="header" class="header">
+        <div class="img"></div>
+        <div class="overlay">
+            <h1 class="text"> Geraldo Rodrigues de Almeida Neto 
+                <p class="smaller_text"> Web Developer </p>
+            </h1>
+        </div>
+    </div>
+    <!--img 
         id="pfp"
         src="foto.jpeg" 
         width="200" 
         alt="Foto de perfil com mão na frente do rosto bem tumblr pra esconder a espinha"
-    >
-
-    <p id="aboutme"> Olá! 😁 meu nome é Geraldo Rodrigues de Almeida Neto a.k.a Geraldo Almeida ou <abbr title="G. R. Almeida N.">'gralmeidan'</abbr> como eu geralmente uso em fóruns online. 👨‍💻 Eu sou natural de Jataí - GO mas atualmente estou morando em Pontes e Lacerda - MT</p>
-
-    <h2 id="skills">Competências:</h2>
-    <ul>
-        <li><strong>JavaScript</strong> -> Me considero especialmente bom em resolução de problemas que envolvem lógica de programação.</li>
-        <li>mySQL</li>
-        <li>Unix</li>
-        <li>Inglês</li>
-        <li>React Native</li>
-        <li>HTML5</li>
-    </ul>
-
-    <h2 id="#projects_personal">Projetos que eu desenvolvi</h2>
-    <ul>
-        <li>Essa página aqui 😁</li>
-    </ul>
     
-    <h2 id="#projects_contributed">Projetos para os quais eu contribui</h2>
-    <ul>
-        <li><a href="https://github.com/biesseck/app_recados_ifmt_plc" target="_blank">NotIFy</a> -> Btw quem pensou no nome fui eu, exceto se você não gostou pq nesse caso não fui eu não. 😁</li>
-    </ul>
+            COMENTADO ATÉ EU PENSAR EM ONDE COLOCAR ISSO
 
-    <!--
-        Idéia pra essas 2 páginas aí: mano podia ser um bglh tipo sla tlgd, cada projeto tem seu próprio card, uma imagem na esquerda mostrando as páginas do projeto e um texto na direita explicando, ai podia ter uma seção falando as tecnologias que foram usadas no projeto e também uma opção pra ver quais tecnologias foram usadas em todos os projetos, 55% html, 44%javascript, mas aquele 1% é vagabundo e pa
     -->
+    <div class = "background">
 
-    <hr>
+        <h1 id="aboutme">Sobre min</h1>
+        <p> Olá! 😁 meu nome é Geraldo Rodrigues de Almeida Neto a.k.a Geraldo Almeida ou <abbr title="G. R. Almeida N.">'gralmeidan'</abbr> como eu geralmente uso em fóruns online. 👨‍💻 Eu sou natural de Jataí - GO mas atualmente estou morando em Pontes e Lacerda - MT</p>
 
-    <h4>Índice:</h4>
-    <a></a>
-    <a href="#projects_personal">Projetos</a> <br>
-    <a href="#title">Header</a> <br>
-    <a href="#aboutme">Sobre Min</a> <br>
-    <a href="#skills">Competências</a> <br>
-    <a href="#links">Links</a>
+        <h2 id="skills">Competências:</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>mySQL</li>
+            <li>Unix</li>
+            <li>Inglês</li>
+            <li>React Native</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>Sass</li>
+        </ul>
 
-    <h4 id="#links">Links:</h4>
-    <a href="https://www.google.com/" target="_blank">Google</a> <br>
-    <a href="#pfp">Minha foto</a> <br>
-    <a href="https://github.com/gralmeidan" target="_blank">Meu github</a> <br>
-    
+        <h2 id="projects_personal">Projetos que eu desenvolvi</h2>
+        <ul>
+            <li>Essa página aqui 😁</li>
+        </ul>
+        
+        <h2>Projetos para os quais eu contribui</h2>
+        <ul>
+            <li><a href="https://github.com/biesseck/app_recados_ifmt_plc" target="_blank">NotIFy</a> -> Btw quem pensou no nome fui eu, exceto se você não gostou pq nesse caso não fui eu não. 😁</li>
+        </ul>
+
+        <hr>
+
+        <div style="justify-content: space-evenly;">
+            <div class="footnote">
+                <h4>Índice:</h4>
+                <div class="links">
+                    <a href="#header">Header</a> <br>
+                    <a href="#aboutme">Sobre Min</a> <br>
+                    <a href="#skills">Competências</a> <br>
+                    <a href="#projects_personal">Projetos</a> <br>
+                </div>
+            </div>
+
+            <div class="footnote">
+                <h4>Links:</h4>
+                <div class="links">
+                    <a href="https://www.google.com/" target="_blank">Google</a> <br>
+                    <a href="https://github.com/gralmeidan" target="_blank">Meu github</a> <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>

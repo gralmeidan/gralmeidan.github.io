@@ -1,0 +1,90 @@
+/* SCSS RGB */
+body, html {
+  background-color: #6c2d67;
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+}
+
+div {
+  display: flex;
+}
+
+.header {
+  position: relative;
+  height: 1080px;
+  width: 100%;
+  z-index: 2;
+}
+.header .img {
+  background-image: url("background.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+.header .overlay {
+  background-color: #6c2d67;
+  color: #e3e3da;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .overlay .text {
+  font-family: Roboto, serif;
+  text-align: center;
+  line-height: 100%;
+  padding-left: 15px;
+  padding-right: 30px;
+  position: relative;
+  color: #e3e3da;
+}
+.header .overlay .text .smaller_text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.5em;
+  margin-bottom: 0;
+  line-height: 0;
+  color: #e3e3da;
+}
+
+.background {
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 65%;
+  background-color: #b781a8;
+  z-index: 1;
+  padding-top: 5%;
+}
+
+.footnote {
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.footnote .links {
+  font-size: 0.8em;
+}
+
+p, ul, ol, a {
+  color: #090806;
+  margin-left: 15px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #6c2d67;
+  text-align: center;
+}
+
+hr {
+  border-color: #6c2d67;
+  border-width: 3px;
+  border-style: solid;
+  width: 80%;
+}
+
+/*# sourceMappingURL=style.css.map */

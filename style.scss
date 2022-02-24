@@ -1,0 +1,108 @@
+/* SCSS RGB */
+$black: rgba(9, 8, 6, 1);
+$palatinate-purple: rgba(108, 45, 103, 1);
+$opera-mauve: rgba(183, 129, 168, 1);
+$ash-gray: rgba(201, 205, 193, 1);
+$alabaster: rgba(227, 227, 218, 1);
+
+body, html {
+    background-color: $palatinate-purple;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+}
+
+div {
+    display: flex;
+}
+
+
+.header {
+
+    position: relative; 
+    height: 1080px; 
+    width: 100%;
+    z-index: 2;
+
+    .img {
+        // Imagem de fundo
+        background-image: url("background.jpg");
+
+        // Configurações do display da imagem
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scale(1.1);
+
+        // Efeito de blur
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+
+    }
+    .overlay {
+
+        background-color: $palatinate-purple;
+        color: $alabaster;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+        .text {
+            
+            font-family: Roboto, serif;
+            text-align: center;
+            line-height: 100%;
+            padding-left: 15px;
+            padding-right: 30px;
+            position: relative;
+            color: $alabaster;
+
+            .smaller_text {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 0.5em;
+                margin-bottom: 0;
+                line-height: 0;
+                color: $alabaster;
+            }
+        }
+    }
+}
+
+.background {
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 65%;
+    background-color: $opera-mauve;
+    z-index: 1;
+    padding-top: 5%;
+}
+
+.footnote {
+    flex-direction: column;
+    padding-bottom: 20px;
+    .links {
+        font-size: 0.8em;
+    }
+}
+
+p, ul, ol, a {
+    color: $black;
+    margin-left: 15px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: $palatinate-purple;
+    text-align: center;
+}
+
+hr {
+    border-color: $palatinate-purple;
+    border-width: 3px;
+    border-style: solid;
+    width: 80%;
+}
