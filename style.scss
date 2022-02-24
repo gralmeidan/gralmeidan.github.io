@@ -1,11 +1,76 @@
+/* SCSS RGB */
+$black: rgba(9, 8, 6, 1);
+$palatinate-purple: rgba(108, 45, 103, 1);
+$opera-mauve: rgba(183, 129, 168, 1);
+$ash-gray: rgba(201, 205, 193, 1);
+$alabaster: rgba(227, 227, 218, 1);
+
+body, html {
+    margin: 0;
+}
+
+div {
+    display: flex;
+}
+
+
+.background {
+    .img {
+        // Imagem de fundo
+        background-image: url("background.jpg");
+
+        // Configurações do display da imagem
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        // Efeito de blur
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+
+        //Configurações do display
+    }
+    .overlay {
+
+        background-color: $palatinate-purple;
+        color: $alabaster;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+        .text {
+
+            font-family: Roboto, serif;
+            text-align: center;
+            line-height: 60%;
+            padding-left: 15px;
+            padding-right: 30px;
+            position: relative;
+
+            .smaller_text {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 0.5em;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+/*
 #background_img {
 
     // Imagem de fundo
     background-image: url("background.jpg");
 
     // Configurações do display da imagem
-    height: 1080px;
-    margin: -1em;
+    height: 100%;
+    width: 100%;
+    //margin: -1em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,8 +80,17 @@
     -webkit-filter: blur(4px);
 
     //Configurações do display
-    display: flex;
-
-
 
 }
+
+#background_img_overlay {
+    background-color: $palatinate-purple;
+    color: $alabaster;
+    font-family: Roboto, serif;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-size: 20px;
+    text-align: center;
+}
+*/
