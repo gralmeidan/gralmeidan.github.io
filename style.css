@@ -1,14 +1,20 @@
 /* SCSS RGB */
 body, html {
-  margin: 0;
   background-color: #6c2d67;
   font-family: Roboto, sans-serif;
+  font-size: 22px;
 }
 
 div {
   display: flex;
 }
 
+.header {
+  position: relative;
+  height: 1080px;
+  width: 100%;
+  z-index: 2;
+}
 .header .img {
   background-image: url("background.jpg");
   height: 100%;
@@ -16,6 +22,7 @@ div {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transform: scale(1.1);
   filter: blur(4px);
   -webkit-filter: blur(4px);
 }
@@ -47,15 +54,18 @@ div {
   left: 50%;
   transform: translate(-50%, 0);
   width: 65%;
+  background-color: #b781a8;
+  z-index: 1;
+  padding-top: 5%;
 }
 
 p, ul, ol, a {
-  color: #e3e3da;
-  text-align: center;
+  color: #090806;
+  margin-left: 15px;
 }
 
 h1, h2, h3, h4, h5 {
-  color: #c9cdc1;
+  color: #6c2d67;
   text-align: center;
 }
 
