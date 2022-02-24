@@ -41,11 +41,13 @@ div {
   padding-left: 15px;
   padding-right: 30px;
   position: relative;
+  color: #e3e3da;
 }
 .header .overlay .text .smaller_text {
   font-family: "Times New Roman", Times, serif;
   font-size: 0.5em;
   margin-bottom: 0;
+  color: #e3e3da;
 }
 
 .background {

@@ -51,18 +51,20 @@ div {
 
 
         .text {
-
+            
             font-family: Roboto, serif;
             text-align: center;
             line-height: 60%;
             padding-left: 15px;
             padding-right: 30px;
             position: relative;
+            color: $alabaster;
 
             .smaller_text {
                 font-family: 'Times New Roman', Times, serif;
                 font-size: 0.5em;
                 margin-bottom: 0;
+                color: $alabaster;
             }
         }
     }
