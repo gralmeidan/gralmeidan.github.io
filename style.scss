@@ -54,7 +54,7 @@ div {
             
             font-family: Roboto, serif;
             text-align: center;
-            line-height: 60%;
+            line-height: 100%;
             padding-left: 15px;
             padding-right: 30px;
             position: relative;
@@ -64,6 +64,7 @@ div {
                 font-family: 'Times New Roman', Times, serif;
                 font-size: 0.5em;
                 margin-bottom: 0;
+                line-height: 0;
                 color: $alabaster;
             }
         }
@@ -81,6 +82,14 @@ div {
     padding-top: 5%;
 }
 
+.footnote {
+    flex-direction: column;
+    padding-bottom: 20px;
+    .links {
+        font-size: 0.8em;
+    }
+}
+
 p, ul, ol, a {
     color: $black;
     margin-left: 15px;
@@ -89,4 +98,11 @@ p, ul, ol, a {
 h1, h2, h3, h4, h5 {
     color: $palatinate-purple;
     text-align: center;
+}
+
+hr {
+    border-color: $palatinate-purple;
+    border-width: 3px;
+    border-style: solid;
+    width: 80%;
 }
