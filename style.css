@@ -1,8 +1,10 @@
 /* SCSS RGB */
+/* VARIABLES */
 body, html {
   background-color: #6c2d67;
   font-family: Roboto, sans-serif;
   font-size: 22px;
+  margin: 0;
 }
 
 div {
@@ -11,9 +13,10 @@ div {
 
 .header {
   position: relative;
-  height: 1080px;
+  height: 100vh;
   width: 100%;
   z-index: 2;
+  overflow: hidden;
 }
 .header .img {
   background-image: url("background.jpg");

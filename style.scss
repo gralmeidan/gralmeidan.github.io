@@ -5,10 +5,14 @@ $opera-mauve: rgba(183, 129, 168, 1);
 $ash-gray: rgba(201, 205, 193, 1);
 $alabaster: rgba(227, 227, 218, 1);
 
+/* VARIABLES */
+$header_img_blur: 4px;
+
 body, html {
     background-color: $palatinate-purple;
     font-family: Roboto, sans-serif;
     font-size: 22px;
+    margin: 0;
 }
 
 div {
@@ -19,9 +23,11 @@ div {
 .header {
 
     position: relative; 
-    height: 1080px; 
+    height: 100vh; 
     width: 100%;
     z-index: 2;
+    //border: 2px solid black;
+    overflow: hidden;
 
     .img {
         // Imagem de fundo
@@ -36,8 +42,8 @@ div {
         transform: scale(1.1);
 
         // Efeito de blur
-        filter: blur(4px);
-        -webkit-filter: blur(4px);
+        filter: blur($header_img_blur);
+        -webkit-filter: blur($header_img_blur);
 
     }
     .overlay {
