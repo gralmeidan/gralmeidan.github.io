@@ -36,7 +36,7 @@ div {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.header .overlay .text {
+.header .overlay h1 {
   font-family: Roboto, sans-serif;
   text-align: center;
   line-height: 100%;
@@ -45,7 +45,7 @@ div {
   position: relative;
   color: #e3e3da;
 }
-.header .overlay .text .smaller_text {
+.header .overlay h1 p {
   font-family: "Times New Roman", Times, serif;
   font-size: 0.5em;
   margin-bottom: 0;
@@ -65,7 +65,7 @@ div {
   flex-direction: column;
   padding-bottom: 20px;
 }
-.footnote .links {
+.footnote div {
   font-size: 0.8em;
 }
 
