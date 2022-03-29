@@ -40,13 +40,15 @@ const createOptions = () => {
   for (let i = 0; i < roles.length; i += 1) {
     const newLabel = document.createElement("label");
     const checkbox = document.createElement("input");
+    const checkmark = document.createElement("span");
     checkbox.type = "checkbox";
     checkbox.name = "roles";
     checkbox.value = roles[i];
-    checkbox.className = "checkbox"
     newLabel.innerText = `${roles[i]} `;
-    newLabel.className = "label"
+    newLabel.className = "label group unselectable";
+    checkmark.className = "checkmark";
     newLabel.appendChild(checkbox);
+    newLabel.appendChild(checkmark);
     container.appendChild(newLabel);
   }
 };
