@@ -8,10 +8,21 @@
 	</head>
 	<body class="bg-neutral-900">
 		<header>
-			<nav></nav>
+			<nav>
+				<div id="mobile-nav-btn" class="absolute right-3 top-3 p-0 z-10 sm:hidden">
+					<hr class="nav-line">
+					<hr class="nav-line">
+					<hr class="nav-line">
+				</div>
+				<div id="nav" class="hidden absolute w-full flex-col drop-shadow-sm">
+					<button class="nav-option">about me</button>
+					<button class="nav-option selected">portfolio</button>
+					<button class="nav-option">contact</button>
+				</div>
+			</nav>
 		</header>
 		<section id="background-img" class="text-white px-3">
-			<section class="pt-24">
+			<section class="pt-36">
 				<h1 class="text-4xl font-semibold font-roboto">
 					Hi, I'm <br /><span class="text-pink-600"
 						>Geraldo Almeida</span
@@ -20,7 +31,7 @@
 				<p class="text-sm font-roboto font-semibold">
 					and I do stuff sometimes.
 				</p>
-				<hr class="border-pink-600 my-2" />
+				<hr class="border-pink-600 my-2 max-w-sm" />
 				<p class="text-lg font-roboto font-semibold">
 					I am a Brazilian full stack web developer and currently a
 					student at Trybe
@@ -31,5 +42,6 @@
 				<button class="hero-button">about me</button>
 			</section>
 		</section>
+		<script src="script.js"></script>
 	</body>
 </html>
