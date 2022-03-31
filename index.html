@@ -4,17 +4,27 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 		<title>Portfolio</title>
 	</head>
 	<body class="bg-neutral-900">
 		<header>
 			<nav>
-				<div id="mobile-nav-btn" class="absolute right-3 top-3 p-0 z-10 sm:hidden">
-					<hr class="nav-line">
-					<hr class="nav-line">
-					<hr class="nav-line">
+				<div class="flex items-center text-white absolute top-2 w-full h-7 pl-3 sm:hidden">
+					<a href="https://www.linkedin.com/in/gralmeidan/" target="_blank" class="mobile-social">
+						<ion-icon name="logo-linkedin"></ion-icon>
+					</a>
+					<a href="https://github.com/gralmeidan" target="_blank" class="mobile-social">
+						<ion-icon name="logo-github"></ion-icon>
+					</a>
 				</div>
-				<div id="nav" class="hidden absolute w-full flex-col drop-shadow-sm">
+				<button id="mobile-nav-btn" class="absolute right-3 top-3 p-0 z-10 sm:hidden">
+					<hr class="nav-line">
+					<hr class="nav-line">
+					<hr class="nav-line">
+				</button>
+				<div id="nav" class="hidden absolute top-0 w-full flex-col drop-shadow-sm">
 					<button class="nav-option">about me</button>
 					<button class="nav-option selected">portfolio</button>
 					<button class="nav-option">contact</button>

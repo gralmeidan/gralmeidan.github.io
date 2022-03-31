@@ -24,6 +24,10 @@
   @apply text-pink-600
 }
 
+.mobile-social {
+  @apply flex items-center mr-8 text-xl
+}
+
 @media screen and (max-width: 640px) {
   .nav-option {
     @apply hover:bg-neutral-800
