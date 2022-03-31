@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-roboto {
+  font-family: Roboto, serif;
+}
+
+.hero-button {
+  font-variant: small-caps;
+  @apply font-roboto font-semibold border-4 p-3 my-2 mr-2
+}
+
+#background-img {
+  background-image: url('./LG\ -\ Text\ to\ Left.png');
+  height: 100vh;
+  width: 100%;
+  background-position-y: 90%;
+  background-position-x: left;
+  background-size: cover;
+}
