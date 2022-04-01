@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-roboto {
+	font-family: Roboto, serif;
+}
+
+.hero-button {
+	font-variant: small-caps;
+	@apply font-roboto font-semibold border-4 p-3 my-2 mr-2 sm:transition-all 
+	sm:hover:bg-white sm:hover:text-neutral-900 sm:text-xl lg:text-2xl sm:border-[6px];
+}
+
+.nav-line {
+	@apply w-7 mb-2;
+}
+
+.nav-option {
+	font-variant: small-caps;
+	@apply font-roboto font-semibold text-white py-3 pl-4 bg-neutral-900 text-left 
+  sm:text-center sm:bg-transparent sm:transition-all sm:hover:text-pink-600 sm:text-xl
+	lg:text-2xl
+}
+
+.selected {
+	@apply text-pink-600 sm:text-white sm:underline sm:underline-offset-8;
+}
+
+.mobile-social {
+	@apply flex items-center mr-8 text-xl;
+}
+
+@media screen and (max-width: 640px) {
+	.nav-option {
+		@apply hover:bg-neutral-800;
+	}
+}
+
+.vl {
+	@apply border-l-2 border-white h-[50px] flex-grow
+}
+
+.hero-social {
+	@apply my-2
+}
+
+@media screen and (min-width: 640px) {
+	#background-img {
+		height: 100vh;
+		width: 100vw;
+		background-position-y: 90%;
+		background-position-x: left;
+		background-size: cover;
+	}
+}
+
+@media screen and (min-width: 780px) {
+	#background-img {
+		background-image: url("./img/background.png");
+	}
+}
+

@@ -4,92 +4,111 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
 		<title>Portfolio</title>
 	</head>
-	<body>
-		
-		<header id="header" class="header">
-			<div class="img"></div>
-			<div class="overlay">
-				<h1>
-					Geraldo Rodrigues de Almeida Neto
-					<p>Web Developer</p>
-				</h1>
-			</div>
-		</header>
-		<!--img id="pfp" src="foto.jpeg" width="200" alt="Foto de perfil com mão na frente do rosto bem tumblr pra esconder a espinha"
-    
-            COMENTADO ATÉ EU PENSAR EM ONDE COLOCAR ISSO
-
-   		
-		<main class="background">
-			<h1 id="aboutme">Sobre mim</h1>
-			<p>
-				Olá! 😁 meu nome é Geraldo Rodrigues de Almeida Neto a.k.a
-				Geraldo Almeida ou
-				<abbr title="G. R. Almeida N.">'gralmeidan'</abbr> como eu
-				geralmente uso em fóruns online. 👨‍💻 Eu sou natural de Jataí - GO
-				mas atualmente estou morando em Pontes e Lacerda - MT
-			</p>
-
-			<h2 id="skills">Competências:</h2>
-			<ul>
-				<li>JavaScript</li>
-				<li>mySQL</li>
-				<li>Unix</li>
-				<li>Inglês</li>
-				<li>React Native</li>
-				<li>HTML5</li>
-				<li>CSS</li>
-				<li>Sass</li>
-			</ul>
-
-			<h2 id="projects_personal">Projetos que eu desenvolvi</h2>
-			<ul>
-				<li>Essa página aqui 😁</li>
-			</ul>
-
-			<h2>Projetos para os quais eu contribui</h2>
-			<ul>
-				<li>
+	<body class="bg-neutral-900">
+		<header>
+			<nav>
+				<div
+					class="flex items-center text-white absolute top-2 w-full h-7 pl-3 sm:hidden"
+				>
 					<a
-						href="https://github.com/biesseck/app_recados_ifmt_plc"
+						href="https://www.linkedin.com/in/gralmeidan/"
 						target="_blank"
-						>NotIFy</a
+						class="mobile-social"
 					>
-					-> Btw quem pensou no nome fui eu, exceto se você não gostou
-					pq nesse caso não fui eu não. 😁
-				</li>
-			</ul>
-
-			<hr />
-
-			<footer style="justify-content: space-evenly">
-
-				<nav class="footnote">
-					<h3>Índice:</h3>
-					<div>
-						<a href="#header">Header</a> <br />
-						<a href="#aboutme">Sobre Min</a> <br />
-						<a href="#skills">Competências</a> <br />
-						<a href="#projects_personal">Projetos</a> <br />
-					</div>
-				</nav>
-
-				<nav class="footnote">
-					<h3>Links:</h3>
-					<div>
-						<a href="https://www.google.com/" target="_blank"
-							>Google</a
+						<ion-icon name="logo-linkedin"></ion-icon>
+					</a>
+					<a
+						href="https://github.com/gralmeidan"
+						target="_blank"
+						class="mobile-social"
+					>
+						<ion-icon name="logo-github"></ion-icon>
+					</a>
+				</div>
+				<button
+					id="mobile-nav-btn"
+					class="absolute right-3 top-3 p-0 z-10 sm:hidden"
+				>
+					<hr class="nav-line" />
+					<hr class="nav-line" />
+					<hr class="nav-line" />
+				</button>
+				<div
+					id="nav"
+					class="hidden absolute top-0 w-full flex-col drop-shadow-sm sm:flex sm:flex-row sm:justify-between sm:pr-4 sm:right-0 sm:w-2/3 lg:w-1/2 sm:drop-shadow-none"
+				>
+					<button class="nav-option">about me</button>
+					<button class="nav-option selected">portfolio</button>
+					<button class="nav-option">contact</button>
+				</div>
+			</nav>
+		</header>
+		<section
+			id="background-img"
+			class="text-white px-3 py-32 sm:py-0 sm:flex sm:items-center sm:pb-[15%]"
+		>
+			<nav
+				class="hidden sm:flex sm:flex-col sm:h-80 lg:h-[270px] sm:items-center mr-10 ml-2 lg:mr-16 min-w-fit"
+			>
+				<div class="vl"></div>
+				<a
+					href="https://www.linkedin.com/in/gralmeidan/"
+					target="_blank"
+					class="hero-social"
+				>
+					<img src="./img/linkedin.svg" alt="Linkedin" class="hover:scale-110 transition-all"/>
+				</a>
+				<div class="vl"></div>
+				<a
+					href="https://www.linkedin.com/in/gralmeidan/"
+					target="_blank"
+					class="hero-social"
+				>
+					<img src="./img/github.svg" alt="Github" class="hover:scale-110 transition-all"/>
+				</a>
+				<div class="vl"></div>
+			</nav>
+			<section>
+				<section class="sm:mb-3">
+					<h1
+						class="text-4xl font-semibold font-roboto sm:text-6xl lg:text-[64px]"
+					>
+						Hi, I'm <br class="lg:hidden" /><span
+							class="text-pink-600"
+							>Geraldo Almeida</span
 						>
-						<br />
-						<a href="https://github.com/gralmeidan" target="_blank"
-							>Meu github</a
-						>
-						<br />
-					</div>
-				</nav>
-			</footer>
-		</main> -->
+					</h1>
+					<p
+						class="text-sm font-roboto font-semibold sm:text-3xl lg:text-4xl w-full"
+					>
+						and I do stuff sometimes.
+					</p>
+					<hr
+						class="border-pink-600 my-2 max-w-sm sm:max-w-xs sm:my-3"
+					/>
+					<p
+						class="text-lg font-roboto font-semibold sm:text-2xl sm:w-[670px]"
+					>
+						I am a Brazilian full stack web developer and currently
+						a student at Trybe
+					</p>
+				</section>
+				<section>
+					<button class="hero-button">explore works</button>
+					<button class="hero-button">about me</button>
+				</section>
+			</section>
+		</section>
+		<script src="./src/script.js"></script>
 	</body>
 </html>
