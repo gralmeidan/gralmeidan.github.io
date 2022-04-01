@@ -601,6 +601,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .font-roboto {
   font-family: Roboto, serif;
 }
@@ -753,13 +759,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media screen and (min-width: 640px) {
   #background-img {
-    background-image: url("./img/background.png");
     height: 100vh;
     width: 100vw;
     background-position-y: 90%;
     background-position-x: left;
     background-size: cover;
   }
+}
+
+@media screen and (min-width: 780px) {
+  #background-img {
+    background-image: url("./img/background.png");
+  }
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 640px) {
@@ -876,3 +893,4 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2.5rem;
   }
 }
+
