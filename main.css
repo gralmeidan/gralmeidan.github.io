@@ -8,7 +8,8 @@
 
 .hero-button {
 	font-variant: small-caps;
-	@apply font-roboto font-semibold border-4 p-3 my-2 mr-2;
+	@apply font-roboto font-semibold border-4 p-3 my-2 mr-2 sm:transition-all 
+	sm:hover:bg-white sm:hover:text-neutral-900 sm:hover:scale-y-95;;
 }
 
 .nav-line {
@@ -18,7 +19,7 @@
 .nav-option {
 	font-variant: small-caps;
 	@apply font-roboto font-semibold text-white py-3 pl-4 bg-neutral-900 text-left 
-  sm:bg-none transition-all;
+  sm:text-center sm:bg-transparent sm:transition-all sm:hover:text-pink-600;
 }
 
 .selected {

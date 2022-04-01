@@ -601,6 +601,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Roboto, serif;
 }
 
+@media (min-width: 640px) {
+  .hero-button {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .hero-button:hover {
+    --tw-scale-y: .95;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .hero-button:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .hero-button:hover {
+    --tw-text-opacity: 1;
+    color: rgb(23 23 23 / var(--tw-text-opacity));
+  }
+}
+
 .nav-line {
   margin-bottom: 0.5rem;
   width: 1.75rem;
@@ -617,15 +640,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   font-family: Roboto, serif;
 }
 
 @media (min-width: 640px) {
   .nav-option {
-    background-image: none;
+    background-color: transparent;
+  }
+
+  .nav-option {
+    text-align: center;
+  }
+
+  .nav-option {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .nav-option:hover {
+    --tw-text-opacity: 1;
+    color: rgb(219 39 119 / var(--tw-text-opacity));
   }
 }
 
@@ -693,6 +728,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%;
   }
 
+  .sm\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -714,5 +753,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1024px) {
   .lg\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
   }
 }
