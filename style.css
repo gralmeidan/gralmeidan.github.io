@@ -607,8 +607,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 .font-roboto {
-  font-family: Roboto, serif;
+  font-family: Roboto, sans-serif;
 }
 
 .hero-button {
@@ -619,7 +621,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 4px;
   padding: 0.75rem;
   font-weight: 600;
-  font-family: Roboto, serif;
+  font-family: Roboto, sans-serif;
 }
 
 @media (min-width: 640px) {
@@ -672,7 +674,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  font-family: Roboto, serif
+  font-family: Roboto, sans-serif
 }
 
 @media (min-width: 640px) {
