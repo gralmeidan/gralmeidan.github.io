@@ -1,7 +1,0 @@
-- Add mobile navbar animation
-- Add more animations to the hero
-- Stop the navbar from fading when:
-  1. Go to mobile mode
-  2. Hide navbar
-  3. Go back to desktop mode
-  4. now it's missing
