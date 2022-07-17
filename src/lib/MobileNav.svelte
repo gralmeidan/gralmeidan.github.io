@@ -8,6 +8,7 @@
 <script>
   import { tweened } from 'svelte/motion';
   import { cubicOut } from 'svelte/easing';
+  import NavOptions from './NavOptions.svelte';
 
   const nav = [
     { href: '#aboutme', text: 'about me' },
@@ -47,14 +48,9 @@
   style:width={`${$navView}px`}
   class="overflow-hidden right-0 absolute h-[100vh] inset-shadow bg-neutral-800"
 >
-  {#each nav as { text, href }}
-    <a
-      class="font-roboto text-white block small-caps font-semibold text-lg hover:text-pink-600 transition-colors p-2 pl-6 whitespace-nowrap "
-      {href}
-    >
-      {text}
-    </a>
-  {/each}
+  <NavOptions
+    className="font-roboto text-white block small-caps font-semibold text-lg hover:text-pink-600 transition-colors p-2 pl-6 whitespace-nowrap "
+  />
 </nav>
 
 <style>
