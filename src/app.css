@@ -15,3 +15,7 @@ body {
 .small-caps {
   font-variant: small-caps;
 }
+
+.no-highlight {
+  -webkit-tap-highlight-color: transparent;
+}
