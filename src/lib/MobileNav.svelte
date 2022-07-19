@@ -46,7 +46,7 @@
 
 <nav
   style:width={`${$navView}px`}
-  class="overflow-hidden right-0 absolute h-[100vh] inset-shadow bg-neutral-800"
+  class="overflow-hidden right-0 absolute h-[100vh] inset-shadow bg-neutral-900"
 >
   <NavOptions
     className="font-roboto text-white block small-caps font-semibold text-lg hover:text-pink-600 transition-colors p-2 pl-6 whitespace-nowrap "
