@@ -17,7 +17,10 @@
   {/if}
 </header>
 
-<main style:left={`-${$navView}px`} class="absolute sm:static">
+<main
+  style:left={`-${$navView}px`}
+  class="absolute w-[100vw] sm:static sm:flex"
+>
   <div src="./src/routes/background.svg" alt="" class="background" />
   <slot />
 </main>
