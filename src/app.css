@@ -36,3 +36,7 @@ html {
   background-color: rgb(255, 255, 255, 0.1);
   @apply rounded-md;
 }
+
+* {
+  @apply text-white;
+}
