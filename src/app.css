@@ -19,3 +19,7 @@ body {
 .no-highlight {
   -webkit-tap-highlight-color: transparent;
 }
+
+.mobile-nav-options {
+  @apply font-roboto small-caps text-white block font-semibold text-lg hover:text-pink-600 transition-colors p-2 pl-6 whitespace-nowrap;
+}

@@ -29,7 +29,7 @@
   .background {
     height: 100vh;
     width: 100vw;
-    background-image: url('./src/routes/background.svg');
+    background-image: url('./background.svg');
     background-position-y: bottom;
     background-position-x: right;
     @apply absolute -z-50 top-0 bg-no-repeat bg-cover;

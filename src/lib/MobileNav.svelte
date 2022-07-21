@@ -48,9 +48,17 @@
   style:width={`${$navView}px`}
   class="overflow-hidden right-0 absolute h-[100vh] inset-shadow bg-neutral-900"
 >
-  <NavOptions
-    className="font-roboto text-white block small-caps font-semibold text-lg hover:text-pink-600 transition-colors p-2 pl-6 whitespace-nowrap "
-  />
+  <NavOptions className="mobile-nav-options" />
+  <a
+    class="mobile-nav-options"
+    target="_blank"
+    href="https://github.com/gralmeidan">github</a
+  >
+  <a
+    class="mobile-nav-options"
+    target="_blank"
+    href="https://www.linkedin.com/in/gralmeidan/">linkedin</a
+  >
 </nav>
 
 <style>
