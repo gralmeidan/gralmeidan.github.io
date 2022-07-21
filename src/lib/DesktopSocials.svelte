@@ -1,5 +1,5 @@
 <nav
-  class="flex flex-col h-80 lg:h-[270px] items-center mr-10 ml-2 lg:mr-16 min-w-fit"
+  class="flex flex-col h-80 lg:h-[270px] items-center mr-10 lg:mr-16 min-w-fit"
 >
   <div />
   <a href="https://github.com/gralmeidan" target="_blank">

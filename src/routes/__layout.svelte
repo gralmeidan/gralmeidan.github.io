@@ -19,7 +19,7 @@
 
 <main
   style:left={`-${$navView}px`}
-  class="absolute w-[100vw] sm:static sm:flex"
+  class="absolute w-[100vw] sm:static sm:flex-col"
 >
   <div src="./src/routes/background.svg" alt="" class="background" />
   <slot />

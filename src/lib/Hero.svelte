@@ -5,7 +5,7 @@
 
 <svelte:window bind:innerWidth />
 
-<div class="flex items-center justify-center h-[100vh] px-2">
+<div class="flex items-center h-[100vh] px-2">
   {#if innerWidth > 640}
     <DesktopSocials />
   {/if}
