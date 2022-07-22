@@ -17,6 +17,7 @@
     rootMargin: '-20%',
   }}
   on:change={handleInView}
+  style:height={isInView && 'fit-content'}
   class={className}
 >
   {#if isInView}

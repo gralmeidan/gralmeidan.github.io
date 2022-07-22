@@ -1,4 +1,8 @@
 <script>
+  import InViewDiv from './InViewDiv.svelte';
+  import { fly, fade } from 'svelte/transition';
+  import { quintOut } from 'svelte/easing';
+
   export let description;
   export let repository;
   export let tags;
@@ -6,47 +10,62 @@
   export let href;
 </script>
 
-<div class="border border-neutral-800 rounded-md m-2 p-3 max-w-md font-roboto">
-  <div class="flex justify-between">
-    <h2 class="text-rose-600 font-semibold text-lg">{title}</h2>
-    {#if href}
-      <a {href} target="_blank" class="no-highlight">
+<InViewDiv className="h-[20vh]">
+  <hr
+    class="border-neutral-800 mt-6 mb-4"
+    transition:fade={{
+      duration: 200,
+    }}
+  />
+  <section
+    class="my-2 font-roboto"
+    transition:fly={{
+      duration: 800,
+      y: 200,
+      easing: quintOut,
+    }}
+  >
+    <div class="flex justify-between">
+      <h2 class="text-pink-600 font-semibold text-lg">{title}</h2>
+      {#if href}
+        <a {href} target="_blank" class="no-highlight">
+          <img
+            src="./icons/external-link.svg"
+            class="w-5 ext-link"
+            alt="Acessar página"
+          />
+        </a>
+      {/if}
+    </div>
+    <p class="text-sm my-2 mb-4">{description['en-US']}</p>
+    <div class="flex justify-between">
+      <div class="flex">
+        {#each tags as tag}
+          <div
+            class="tooltip pr-1"
+            style:margin-right={tag === 'svelte' && '-3px'}
+          >
+            <div>{tag}</div>
+            <img
+              src={`./icons/${tag}.${
+                tag === 'react-testing-library' ? 'png' : 'svg'
+              }`}
+              alt={tag}
+              class="text-rose-600 w-6 h-5"
+            />
+          </div>
+        {/each}
+      </div>
+      <a href={repository} target="_blank" class="no-highlight">
         <img
-          src="./icons/external-link.svg"
-          class="w-5 ext-link"
-          alt="Acessar página"
+          src="./github-norect.svg"
+          class="w-5 h-5 scale-[2.3]"
+          alt="Repository"
         />
       </a>
-    {/if}
-  </div>
-  <p class="text-sm my-2">{description['en-US']}</p>
-  <div class="flex justify-between">
-    <div class="flex">
-      {#each tags as tag}
-        <div
-          class="tooltip pr-1"
-          style:margin-right={tag === 'svelte' && '-3px'}
-        >
-          <div>{tag}</div>
-          <img
-            src={`./icons/${tag}.${
-              tag === 'react-testing-library' ? 'png' : 'svg'
-            }`}
-            alt={tag}
-            class="text-rose-600 w-6 h-5"
-          />
-        </div>
-      {/each}
     </div>
-    <a href={repository} target="_blank" class="no-highlight">
-      <img
-        src="./github-norect.svg"
-        class="w-5 h-5 scale-[2.3]"
-        alt="Repository"
-      />
-    </a>
-  </div>
-</div>
+  </section>
+</InViewDiv>
 
 <style>
   img {

@@ -38,9 +38,9 @@
     }}
   >
     <h1
-      class="font-semibold text-4xl text-rose-600 text-center md:text-left ml-2"
+      class="font-semibold text-4xl text-pink-600 text-center md:text-left ml-2"
     >
-      About me.
+      About me
     </h1>
     <div
       class="md:flex md:items-center md:p-2 md:border-neutral-800
