@@ -10,43 +10,31 @@
   import { cubicOut } from 'svelte/easing';
   import NavOptions from './NavOptions.svelte';
 
-  const nav = [
-    { href: '#aboutme', text: 'about me' },
-    { href: '#portfolio', text: 'my works' },
-    { href: '#contact', text: 'contact' },
-  ];
-
   const toggleVisible = () => {
-    if ($navView > 0) {
-      navView.set(0);
-      closeIcon = false;
-    } else {
-      navView.set(200);
-      closeIcon = true;
-    }
+    $navView = $navView > 0 ? 0 : 200;
+    closeIcon = !closeIcon;
   };
 
   let closeIcon = false;
 </script>
 
-<svelte:body class="overflow-hidden" />
-
-<button
-  style:right={`${$navView}px`}
-  class="absolute top-0 p-2 right-0 flex flex-col gap-[6px] z-10 bg-neutral-900 no-highlight pt-3"
-  on:click={toggleVisible}
->
-  {#each Array(3) as _}
-    <hr
-      class="bg-white border-[1px] w-7 transition-all duration-200"
-      class:close-icon={closeIcon}
-    />
-  {/each}
-</button>
+<div style:right={`${$navView}px`} class="absolute top-0 right-0 z-10 h-full">
+  <button
+    on:click={toggleVisible}
+    class="flex flex-col gap-[6px] no-highlight sticky top-0 p-2 pt-3"
+  >
+    {#each Array(3) as _}
+      <hr
+        class="bg-white border-[1px] w-7 transition-all duration-200"
+        class:close-icon={closeIcon}
+      />
+    {/each}
+  </button>
+</div>
 
 <nav
   style:width={`${$navView}px`}
-  class="overflow-hidden right-0 absolute h-[100vh] inset-shadow bg-neutral-900"
+  class="overflow-hidden h-[100vh] inset-shadow bg-neutral-900 fixed top-0 right-0"
 >
   <NavOptions className="mobile-nav-options" />
   <a
