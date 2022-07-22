@@ -27,7 +27,7 @@
 
 <InViewDiv
   htmlId="aboutme"
-  className="m-2 font-roboto h-[80vh] md:h-[60vh] md:max-w-screen-md md:m-auto md:flex md:items-center"
+  className="m-2 font-roboto h-[80vh] md:h-[60vh] md:max-w-screen-md md:m-auto md:flex md:items-center lg:max-w-screen-lg"
 >
   <article
     transition:fly={{
@@ -70,7 +70,7 @@
             easing: quintOut,
           }}
         >
-          <h2 class="text-center font-semibold">My skills</h2>
+          <h2 class="text-center font-semibold md:text-lg">My skills</h2>
           {#each skills as { name, value, color }}
             <SkillProgress {name} {value} {color} />
           {/each}
@@ -82,9 +82,10 @@
 
 <style>
   p {
-    @apply my-2 text-center md:text-left;
+    font-family: Roboto, sans-serif;
+    @apply my-2 text-center md:text-left md:text-lg;
   }
   code {
-    @apply bg-neutral-800 px-1 py-[2px] text-sm rounded-md font-mono text-neutral-300;
+    @apply bg-neutral-800 px-1 py-[2px] text-sm rounded-md font-mono text-neutral-300 md:text-base;
   }
 </style>
