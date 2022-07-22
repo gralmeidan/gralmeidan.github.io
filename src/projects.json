@@ -1,6 +1,6 @@
 {
   "portfolio": {
-    "tags": ["svelte", "svelte-kit", "tailwindcss"],
+    "tags": ["svelte", "tailwindcss"],
     "title": "Portfolio",
     "type": "Front-End",
     "description": {
