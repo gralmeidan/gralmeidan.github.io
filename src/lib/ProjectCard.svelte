@@ -3,12 +3,22 @@
   export let repository;
   export let tags;
   export let title;
-  export let trybe;
   export let href;
 </script>
 
 <div class="border border-neutral-800 rounded-md m-2 p-3 max-w-md font-roboto">
-  <h2 class="text-rose-600 font-semibold text-lg">{title}</h2>
+  <div class="flex justify-between">
+    <h2 class="text-rose-600 font-semibold text-lg">{title}</h2>
+    {#if href}
+      <a {href} target="_blank" class="no-highlight">
+        <img
+          src="./icons/external-link.svg"
+          class="w-5 ext-link"
+          alt="Acessar página"
+        />
+      </a>
+    {/if}
+  </div>
   <p class="text-sm my-2">{description['en-US']}</p>
   <div class="flex justify-between">
     <div class="flex">
@@ -53,10 +63,19 @@
   }
 
   .tooltip div {
-    @apply bg-neutral-800 transition-all opacity-0 -top-11 p-2 block whitespace-nowrap rounded-md absolute z-10 invisible;
+    @apply bg-neutral-800 -top-11 p-2 block whitespace-nowrap rounded-md absolute z-10 invisible;
   }
 
   .tooltip:hover div {
-    @apply opacity-100 visible;
+    @apply visible;
+  }
+
+  .ext-link {
+    filter: invert(50%);
+  }
+
+  .ext-link:hover,
+  a:hover .ext-link {
+    filter: invert(70%);
   }
 </style>
