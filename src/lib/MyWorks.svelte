@@ -4,8 +4,6 @@
   import ProjectCard from './ProjectCard.svelte';
   import { fly } from 'svelte/transition';
   import { quintOut } from 'svelte/easing';
-
-  console.log(projects);
 </script>
 
 <InViewDiv>

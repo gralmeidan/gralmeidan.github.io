@@ -1,11 +1,23 @@
 <script>
   import FancyInput from './FancyInput.svelte';
+  import { fly } from 'svelte/transition';
+
   let name = '';
   let email = '';
   let message = '';
+
   let response;
+  let error;
 
   const submitForm = () => {
+    response = undefined;
+    error = undefined;
+
+    if (name === '' || email === '' || message === '') {
+      error = 'Every field is required';
+      return;
+    }
+
     const URL = 'https://formsubmit.co/ajax/f9c030aaad6b5efec769c33a6a946cb3';
     fetch(URL, {
       method: 'POST',
@@ -39,13 +51,29 @@
       bind:value={message}
       label="Message"
     />
-    <div class="flex">
+    <div class="flex items-baseline">
       <button
         on:click|preventDefault={submitForm}
         class="font-roboto p-2 mt-4 bg-neutral-800 px-4 rounded transition-colors hover:bg-neutral-700 active:bg-neutral-900"
         >Submit</button
       >
-      <p>Form submitted</p>
+      {#if response || error}
+        {#if response?.success}
+          <p
+            class="ml-4 text-sm font-roboto text-neutral-400"
+            in:fly={{ y: -20 }}
+          >
+            Form submitted successfully
+          </p>
+        {:else}
+          <p
+            class="ml-4 text-sm font-roboto text-neutral-400"
+            in:fly={{ y: -20 }}
+          >
+            {error || 'Something went wrong, please try again later'}
+          </p>
+        {/if}
+      {/if}
     </div>
   </form>
 </section>
