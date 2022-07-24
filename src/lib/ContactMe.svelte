@@ -1,6 +1,8 @@
 <script>
   import FancyInput from './FancyInput.svelte';
   import { fly } from 'svelte/transition';
+  import InViewDiv from './InViewDiv.svelte';
+  import { quintOut } from 'svelte/easing';
 
   let name = '';
   let email = '';
@@ -41,39 +43,48 @@
   };
 </script>
 
-<section class="m-4">
-  <form>
-    <FancyInput type="input" name="name" bind:value={name} label="Name" />
-    <FancyInput type="input" name="email" bind:value={email} label="E-mail" />
-    <FancyInput
-      type="textarea"
-      name="message"
-      bind:value={message}
-      label="Message"
-    />
-    <div class="flex items-baseline">
-      <button
-        on:click|preventDefault={submitForm}
-        class="font-roboto p-2 mt-4 bg-neutral-800 px-4 rounded transition-colors hover:bg-neutral-700 active:bg-neutral-900"
-        >Submit</button
-      >
-      {#if response || error}
-        {#if response?.success}
-          <p
-            class="ml-4 text-sm font-roboto text-neutral-400"
-            in:fly={{ y: -20 }}
-          >
-            Form submitted successfully
-          </p>
-        {:else}
-          <p
-            class="ml-4 text-sm font-roboto text-neutral-400"
-            in:fly={{ y: -20 }}
-          >
-            {error || 'Something went wrong, please try again later'}
-          </p>
+<InViewDiv className="h-[20vh]">
+  <section
+    class="m-4 md:max-w-screen-md md:m-auto lg:max-w-screen-lg"
+    transition:fly={{
+      duration: 1000,
+      y: 300,
+      easing: quintOut,
+    }}
+  >
+    <form>
+      <FancyInput type="input" name="name" bind:value={name} label="Name" />
+      <FancyInput type="input" name="email" bind:value={email} label="E-mail" />
+      <FancyInput
+        type="textarea"
+        name="message"
+        bind:value={message}
+        label="Message"
+      />
+      <div class="flex items-baseline">
+        <button
+          on:click|preventDefault={submitForm}
+          class="font-roboto p-2 mt-4 bg-neutral-800 px-4 rounded transition-colors hover:bg-neutral-700 active:bg-neutral-900"
+          >Submit</button
+        >
+        {#if response || error}
+          {#if response?.success}
+            <p
+              class="ml-4 text-sm font-roboto text-neutral-400"
+              in:fly={{ y: -20 }}
+            >
+              Form submitted successfully
+            </p>
+          {:else}
+            <p
+              class="ml-4 text-sm font-roboto text-neutral-400"
+              in:fly={{ y: -20 }}
+            >
+              {error || 'Something went wrong, please try again later'}
+            </p>
+          {/if}
         {/if}
-      {/if}
-    </div>
-  </form>
-</section>
+      </div>
+    </form>
+  </section>
+</InViewDiv>
