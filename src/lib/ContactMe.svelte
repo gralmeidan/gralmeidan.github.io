@@ -43,7 +43,6 @@
 </script>
 
 <InViewDiv className="h-[20vh]" htmlId="contact">
-  <span slot="id" id="contact" class="absolute bottom-0" />
   <section class="section">
     <h1>Contact me</h1>
     <form>

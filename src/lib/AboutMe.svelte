@@ -23,11 +23,7 @@
   ];
 </script>
 
-<InViewDiv
-  htmlId="aboutme"
-  className="m-2 font-roboto h-[80vh] md:h-[60vh] relative"
->
-  <span slot="id" id="aboutme" class="relative -top-10" />
+<InViewDiv htmlId="aboutme">
   <article class="section relative">
     <h1 class="ml-2">About me</h1>
     <div class="md:flex md:items-center md:p-2">

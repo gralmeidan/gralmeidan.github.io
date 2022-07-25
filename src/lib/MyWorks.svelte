@@ -4,8 +4,7 @@
   import ProjectCard from './ProjectCard.svelte';
 </script>
 
-<InViewDiv className="relative">
-  <span slot="id" id="portfolio" class="relative -top-40" />
+<InViewDiv className="relative" htmlId="portfolio">
   <section class="section">
     <h1>My works</h1>
     {#each Object.values(projects) as project}

@@ -25,8 +25,8 @@
       </p>
     </div>
     <div>
-      <button class="hero-button font-roboto">explore works</button>
-      <button class="hero-button font-roboto">about me</button>
+      <a class="hero-button font-roboto" href="#portfolio">explore works</a>
+      <a class="hero-button font-roboto" href="#aboutme">about me</a>
     </div>
   </section>
 </div>
@@ -34,6 +34,6 @@
 <style>
   .hero-button {
     font-variant: small-caps;
-    @apply font-semibold border-4 p-3 my-2 mr-2 sm:transition-all sm:hover:bg-white sm:hover:text-neutral-900 sm:text-xl lg:text-2xl sm:border-[6px] text-white;
+    @apply font-semibold border-4 p-3 my-2 mr-2 sm:transition-all sm:hover:bg-white sm:hover:text-neutral-900 sm:text-xl lg:text-2xl sm:border-[6px] text-white inline-block;
   }
 </style>

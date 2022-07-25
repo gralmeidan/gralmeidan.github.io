@@ -2,12 +2,12 @@
   import { inview } from 'svelte-inview';
 
   export let className = '';
+  export let htmlId = '';
   let isInView;
 
   const handleInView = ({ detail: { inView } }) => {
     isInView = inView;
   };
-  $: console.log(isInView);
 </script>
 
 <div
@@ -16,9 +16,11 @@
     rootMargin: '-20%',
   }}
   on:change={handleInView}
-  style:height={isInView && 'fit-content'}
+  style:height={'fit-content'}
+  class:relative={htmlId !== ''}
   class={className}
 >
+  <span id={htmlId} class="-top-12 relative" />
   {#if isInView}
     <div class="slide-top">
       <slot />
