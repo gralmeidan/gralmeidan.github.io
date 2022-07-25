@@ -1,8 +1,14 @@
 <script>
+  import strings from '../strings';
+  import getLocale from '../helpers/getLocale';
+
+  const locale = getLocale();
+  const { aboutme, portfolio, contact } = strings[locale].nav;
+
   const nav = [
-    { href: '#aboutme', text: 'about me' },
-    { href: '#portfolio', text: 'my works' },
-    { href: '#contact', text: 'contact' },
+    { href: '#aboutme', text: aboutme },
+    { href: '#portfolio', text: portfolio },
+    { href: '#contact', text: contact },
   ];
 
   export let className;

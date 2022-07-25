@@ -1,11 +1,16 @@
 <script>
   import InViewDiv from './InViewDiv.svelte';
+  import getLocale from '../helpers/getLocale';
 
   export let description;
   export let repository;
   export let tags;
   export let title;
   export let href;
+
+  const locale = getLocale();
+
+  console.log(locale);
 </script>
 
 <InViewDiv className="h-[20vh]">
@@ -23,7 +28,7 @@
         </a>
       {/if}
     </div>
-    <p class="text-sm my-2 mb-4">{description['en-US']}</p>
+    <p class="text-sm my-2 mb-4">{description[locale]}</p>
     <div class="flex justify-between">
       <div class="flex">
         {#each tags as tag}

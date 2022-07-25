@@ -27,6 +27,7 @@
   },
   "type": "module",
   "dependencies": {
+    "svelte-i18n": "^3.4.0",
     "svelte-inview": "^3.0.1"
   }
 }

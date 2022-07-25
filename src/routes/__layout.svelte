@@ -6,7 +6,6 @@
 </script>
 
 <svelte:window bind:innerWidth />
-
 <header>
   {#if !!innerWidth}
     {#if innerWidth < 640}
@@ -20,6 +19,3 @@
 <main style:left={`-${$navView}px`} class="relative w-[100vw] sm:static">
   <slot />
 </main>
-
-<style>
-</style>

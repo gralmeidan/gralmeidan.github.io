@@ -2,6 +2,8 @@
   import FancyInput from './FancyInput.svelte';
   import { fly } from 'svelte/transition';
   import InViewDiv from './InViewDiv.svelte';
+  import strings from '../strings';
+  import getLocale from '../helpers/getLocale';
 
   let name = '';
   let email = '';
@@ -10,12 +12,14 @@
   let response;
   let error;
 
+  const locale = getLocale();
+  const { title, form } = strings[locale].contact;
   const submitForm = () => {
     response = undefined;
     error = undefined;
 
     if (name === '' || email === '' || message === '') {
-      error = 'Every field is required';
+      error = form.feedback.req_err;
       return;
     }
 
@@ -44,21 +48,31 @@
 
 <InViewDiv className="h-[20vh]" htmlId="contact">
   <section class="section">
-    <h1>Contact me</h1>
+    <h1>{title}</h1>
     <form>
-      <FancyInput type="input" name="name" bind:value={name} label="Name" />
-      <FancyInput type="input" name="email" bind:value={email} label="E-mail" />
+      <FancyInput
+        type="input"
+        name="name"
+        bind:value={name}
+        label={form.name}
+      />
+      <FancyInput
+        type="input"
+        name="email"
+        bind:value={email}
+        label={form.email}
+      />
       <FancyInput
         type="textarea"
         name="message"
         bind:value={message}
-        label="Message"
+        label={form.message}
       />
       <div class="flex items-baseline">
         <button
           on:click|preventDefault={submitForm}
           class="font-roboto p-2 mt-4 bg-neutral-800 px-4 rounded transition-colors hover:bg-neutral-700 active:bg-neutral-900"
-          >Submit</button
+          >{form.submit}</button
         >
         {#if response || error}
           {#if response?.success}
@@ -66,14 +80,14 @@
               class="ml-4 text-sm font-roboto text-neutral-400"
               in:fly={{ y: -20 }}
             >
-              Form submitted successfully!
+              {form.feedback.success}
             </p>
           {:else}
             <p
               class="ml-4 text-sm font-roboto text-neutral-400"
               in:fly={{ y: -20 }}
             >
-              {error || 'Something went wrong, please try again later'}
+              {error || form.feedback.api_err}
             </p>
           {/if}
         {/if}

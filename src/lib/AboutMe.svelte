@@ -1,7 +1,9 @@
 <script>
   import { onDestroy } from 'svelte';
+  import getLocale from '../helpers/getLocale';
   import InViewDiv from './InViewDiv.svelte';
   import SkillProgress from './SkillProgress.svelte';
+  import strings from '../strings.json';
 
   let age = 18;
   const ageInterval = setInterval(() => {
@@ -21,6 +23,9 @@
     { name: 'Tailwind', value: 60, color: '#07b6d5' },
     { name: 'Svelte', value: 20, color: '#ff3e00' },
   ];
+
+  const locale = getLocale();
+  const { title, p1, p2, skills_title } = strings[locale].aboutme;
 </script>
 
 <InViewDiv htmlId="aboutme">
@@ -29,21 +34,17 @@
     <div class="md:flex md:items-center md:p-2">
       <section class="md:w-1/2">
         <p>
-          Hey! My name is Geraldo Almeida, I am <code>{age}</code> years old, and
-          I enjoy writing code. My first contact with the wonderful world of programming
-          was making simple Discord bots with Python, and my first project with web
-          development was an extracurricular project in high school consisting of
-          building a mobile app with React Native.
+          {@html p1.replace('${age}', `<code>${age}</code>`)}
         </p>
         <p>
-          I greatly enjoyed both experiences and have since worked towards
-          becoming a Full Stack Web Developer by enrolling in a bootcamp and
-          doing various projects to solidify my skills.
+          {p2}
         </p>
       </section>
       <InViewDiv className="md:w-1/2 md:ml-2">
         <section class="border rounded-md p-2 border-neutral-600 md:border-0">
-          <h2 class="text-center font-semibold md:text-lg">My skills</h2>
+          <h2 class="text-center font-semibold md:text-lg">
+            {skills_title}
+          </h2>
           {#each skills as { name, value, color }}
             <SkillProgress {name} {value} {color} />
           {/each}
@@ -57,8 +58,5 @@
   p {
     font-family: Roboto, sans-serif;
     @apply my-2 text-center md:text-left md:text-lg;
-  }
-  code {
-    @apply bg-neutral-800 px-1 py-[2px] text-sm rounded-md font-mono text-neutral-300 md:text-base;
   }
 </style>

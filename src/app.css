@@ -49,3 +49,7 @@ html {
 .section > h1 {
   @apply font-roboto font-semibold text-2xl md:text-4xl text-center text-pink-600 my-4 md:text-left;
 }
+
+code {
+  @apply bg-neutral-800 px-1 py-[2px] text-sm rounded-md font-mono text-neutral-300 md:text-base;
+}

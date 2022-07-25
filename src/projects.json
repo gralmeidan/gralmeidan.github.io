@@ -4,18 +4,18 @@
     "title": "Portfolio",
     "type": "Front-End",
     "description": {
-      "pt-BR": "É a página que você está vendo agora.",
-      "en-US": "It's the page you're in right now."
+      "pt": "É a página que você está vendo agora.",
+      "en": "It's the page you're in right now."
     },
     "repository": "https://github.com/gralmeidan/gralmeidan.github.io/tree/svelte",
     "trybe": false
   },
   "online-store": {
-    "tags": ["react", "redux", "tailwindcss", "jest", "react-testing-library"],
+    "tags": ["react", "tailwindcss"],
     "title": "Trybe Online Store",
     "description": {
-      "pt-BR": "Esse é um dos projetos que eu desenvolvi na Trybe, consistindo no Front End de uma loja online utilizando-se da API do Mercado Livre para buscar produtos e com testes unitários e de integração feitos em Jest com RTL.",
-      "en-US": "This is one of the projects I developed at Trybe. It consists of a fictional online shop. We used Mercado Livre's API to fetch all the products and only developed the front end for the site, with tests originally made with Jest and RTL."
+      "pt": "Esse é um dos projetos que eu desenvolvi na Trybe, consistindo no Front End de uma loja online utilizando-se da API do Mercado Livre para buscar produtos.",
+      "en": "This is one of the projects I developed at Trybe. It consists of a fictional online shop. We used Mercado Livre's API to fetch all the products and only developed the front end for the site."
     },
     "repository": "https://github.com/gralmeidan/trybe-onlinestore",
     "href": "https://gralmeidan.github.io/trybe-onlinestore/#/",
@@ -25,8 +25,8 @@
     "tags": ["react-native", "firebase"],
     "title": "NotIFy",
     "description": {
-      "pt-BR": "Esse é o projeto de extensão que eu mencionei. Foi meu primeiro projeto de verdade com programação, e por mais que no final o projeto não tenha sido continuado pela instituição, o processo de desenvolvimento foi muito divertido e todos nós ficamos felizes com o resultado.",
-      "en-US": "This is the aforementioned extracurricular project. It was the first actual project I worked on, and although at the time I had a very vague understanding of what I was doing, it was a lot of fun and we were all proud of the end result."
+      "pt": "Esse é o projeto de extensão que eu mencionei. Foi meu primeiro projeto de verdade com programação e por mais que no final o projeto não tenha sido continuado pela instituição, o processo de desenvolvimento foi muito divertido e todos nós ficamos felizes com o resultado.",
+      "en": "This is the aforementioned extracurricular project. It was the first actual project I worked on, and although at the time I had a very vague understanding of what I was doing, it was a lot of fun and we were all proud of the end result."
     },
     "repository": "https://github.com/biesseck/app_recados_ifmt_plc",
     "trybe": false
