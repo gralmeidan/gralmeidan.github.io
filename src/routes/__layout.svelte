@@ -18,17 +18,8 @@
 </header>
 
 <main style:left={`-${$navView}px`} class="relative w-[100vw] sm:static">
-  <div src="./src/routes/background.svg" alt="" class="background" />
   <slot />
 </main>
 
 <style>
-  .background {
-    height: 100vh;
-    width: 100vw;
-    background-image: url('./background.svg');
-    background-position-y: bottom;
-    background-position-x: right;
-    @apply absolute -z-50 top-0 bg-no-repeat bg-cover;
-  }
 </style>

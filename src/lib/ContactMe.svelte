@@ -45,18 +45,14 @@
 
 <InViewDiv className="h-[20vh]">
   <section
-    class="m-4 md:max-w-screen-md md:m-auto lg:max-w-screen-lg"
+    class="section"
     transition:fly={{
       duration: 1000,
       y: 300,
       easing: quintOut,
     }}
   >
-    <h1
-      class="font-roboto font-semibold text-2xl md:text-4xl text-center text-pink-600 my-4 md:text-left"
-    >
-      Contact me
-    </h1>
+    <h1>Contact me</h1>
     <form>
       <FancyInput type="input" name="name" bind:value={name} label="Name" />
       <FancyInput type="input" name="email" bind:value={email} label="E-mail" />

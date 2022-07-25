@@ -40,3 +40,11 @@ html {
 * {
   @apply text-white;
 }
+
+.section {
+  @apply m-4 md:max-w-screen-md md:m-auto lg:max-w-screen-lg;
+}
+
+.section > h1 {
+  @apply font-roboto font-semibold text-2xl md:text-4xl text-center text-pink-600 my-4 md:text-left;
+}

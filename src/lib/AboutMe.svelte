@@ -25,10 +25,7 @@
   ];
 </script>
 
-<InViewDiv
-  htmlId="aboutme"
-  className="m-2 font-roboto h-[80vh] md:h-[60vh] md:max-w-screen-md md:m-auto md:flex md:items-center lg:max-w-screen-lg"
->
+<InViewDiv htmlId="aboutme" className="m-2 font-roboto h-[80vh] md:h-[60vh]">
   <article
     transition:fly={{
       delay: 200,
@@ -36,16 +33,10 @@
       y: 100,
       easing: quintOut,
     }}
+    class="section"
   >
-    <h1
-      class="font-semibold text-4xl text-pink-600 text-center md:text-left ml-2"
-    >
-      About me
-    </h1>
-    <div
-      class="md:flex md:items-center md:p-2 md:border-neutral-800
-      md:rounded-md"
-    >
+    <h1 class="ml-2">About me</h1>
+    <div class="md:flex md:items-center md:p-2">
       <section class="md:w-1/2">
         <p>
           Hey! My name is Geraldo Almeida, I am <code>{age}</code> years old, and

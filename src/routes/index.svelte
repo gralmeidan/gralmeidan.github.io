@@ -10,7 +10,6 @@
 
 {#if ready}
   <Hero />
-  <div class="h-[20vh]" />
   <AboutMe />
   <div class="h-[20vh]" />
   <MyWorks />
