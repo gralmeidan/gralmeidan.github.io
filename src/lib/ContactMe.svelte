@@ -52,6 +52,11 @@
       easing: quintOut,
     }}
   >
+    <h1
+      class="font-roboto font-semibold text-2xl md:text-4xl text-center text-pink-600 my-4 md:text-left"
+    >
+      Contact me
+    </h1>
     <form>
       <FancyInput type="input" name="name" bind:value={name} label="Name" />
       <FancyInput type="input" name="email" bind:value={email} label="E-mail" />
@@ -73,7 +78,7 @@
               class="ml-4 text-sm font-roboto text-neutral-400"
               in:fly={{ y: -20 }}
             >
-              Form submitted successfully
+              Form submitted successfully!
             </p>
           {:else}
             <p
