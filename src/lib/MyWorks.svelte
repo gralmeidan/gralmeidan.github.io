@@ -2,8 +2,6 @@
   import projects from '../projects.json';
   import InViewDiv from './InViewDiv.svelte';
   import ProjectCard from './ProjectCard.svelte';
-  import { fly } from 'svelte/transition';
-  import { quintOut } from 'svelte/easing';
 </script>
 
 <InViewDiv className="relative">

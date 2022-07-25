@@ -2,8 +2,6 @@
   import { onDestroy } from 'svelte';
   import InViewDiv from './InViewDiv.svelte';
   import SkillProgress from './SkillProgress.svelte';
-  import { fly } from 'svelte/transition';
-  import { quintOut } from 'svelte/easing';
 
   let age = 18;
   const ageInterval = setInterval(() => {

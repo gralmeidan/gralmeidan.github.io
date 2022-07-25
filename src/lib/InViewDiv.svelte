@@ -1,6 +1,5 @@
 <script>
   import { inview } from 'svelte-inview';
-  import Saos from './Saos.svelte';
 
   export let className = '';
   let isInView;

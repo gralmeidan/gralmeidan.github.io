@@ -1,7 +1,5 @@
 <script>
   import InViewDiv from './InViewDiv.svelte';
-  import { fly, fade } from 'svelte/transition';
-  import { quintOut } from 'svelte/easing';
 
   export let description;
   export let repository;

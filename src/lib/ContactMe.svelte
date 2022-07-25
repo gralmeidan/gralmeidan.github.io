@@ -2,7 +2,6 @@
   import FancyInput from './FancyInput.svelte';
   import { fly } from 'svelte/transition';
   import InViewDiv from './InViewDiv.svelte';
-  import { quintOut } from 'svelte/easing';
 
   let name = '';
   let email = '';
