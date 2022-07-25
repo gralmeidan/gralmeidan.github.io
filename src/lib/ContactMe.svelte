@@ -43,15 +43,9 @@
   };
 </script>
 
-<InViewDiv className="h-[20vh]">
-  <section
-    class="section"
-    transition:fly={{
-      duration: 1000,
-      y: 300,
-      easing: quintOut,
-    }}
-  >
+<InViewDiv className="h-[20vh]" htmlId="contact">
+  <span slot="id" id="contact" class="absolute bottom-0" />
+  <section class="section">
     <h1>Contact me</h1>
     <form>
       <FancyInput type="input" name="name" bind:value={name} label="Name" />

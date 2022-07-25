@@ -25,16 +25,12 @@
   ];
 </script>
 
-<InViewDiv htmlId="aboutme" className="m-2 font-roboto h-[80vh] md:h-[60vh]">
-  <article
-    transition:fly={{
-      delay: 200,
-      duration: 1000,
-      y: 100,
-      easing: quintOut,
-    }}
-    class="section"
-  >
+<InViewDiv
+  htmlId="aboutme"
+  className="m-2 font-roboto h-[80vh] md:h-[60vh] relative"
+>
+  <span slot="id" id="aboutme" class="relative -top-10" />
+  <article class="section relative">
     <h1 class="ml-2">About me</h1>
     <div class="md:flex md:items-center md:p-2">
       <section class="md:w-1/2">
@@ -52,15 +48,7 @@
         </p>
       </section>
       <InViewDiv className="md:w-1/2 md:ml-2">
-        <section
-          class="border rounded-md p-2 border-neutral-600 md:border-0"
-          transition:fly={{
-            delay: 100,
-            duration: 1000,
-            y: 100,
-            easing: quintOut,
-          }}
-        >
+        <section class="border rounded-md p-2 border-neutral-600 md:border-0">
           <h2 class="text-center font-semibold md:text-lg">My skills</h2>
           {#each skills as { name, value, color }}
             <SkillProgress {name} {value} {color} />

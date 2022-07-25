@@ -6,15 +6,9 @@
   import { quintOut } from 'svelte/easing';
 </script>
 
-<InViewDiv>
-  <section
-    class="section"
-    transition:fly={{
-      duration: 800,
-      y: 200,
-      easing: quintOut,
-    }}
-  >
+<InViewDiv className="relative">
+  <span slot="id" id="portfolio" class="relative -top-40" />
+  <section class="section">
     <h1>My works</h1>
     {#each Object.values(projects) as project}
       <ProjectCard {...project} />
