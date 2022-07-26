@@ -11,9 +11,6 @@
 {#if ready}
   <Hero />
   <AboutMe />
-  <div class="h-[40vh]" />
   <MyWorks />
-  <div class="h-[40vh]" />
   <ContactMe />
-  <div class="h-[40vh]" />
 {/if}

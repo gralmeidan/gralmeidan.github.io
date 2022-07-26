@@ -43,7 +43,7 @@ html {
 }
 
 .section {
-  @apply m-4 md:max-w-screen-md md:m-auto lg:max-w-screen-lg;
+  @apply mx-4 md:mx-auto md:w-9/12 md:max-w-screen-lg mb-[350px];
 }
 
 .section > h1 {
