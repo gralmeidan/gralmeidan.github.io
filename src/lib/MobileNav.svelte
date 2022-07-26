@@ -18,25 +18,24 @@
   let closeIcon = false;
 </script>
 
-<div style:right={`${$navView}px`} class="absolute top-0 right-0 z-10 h-full">
-  <button
-    on:click={toggleVisible}
-    class="flex flex-col gap-[6px] no-highlight sticky top-0 p-2 pt-3"
-  >
-    {#each Array(3) as _}
-      <hr
-        class="bg-white border-[1px] w-7 transition-all duration-200"
-        class:close-icon={closeIcon}
-      />
-    {/each}
-  </button>
-</div>
+<button
+  style:right={`${$navView}px`}
+  on:click={toggleVisible}
+  class="flex flex-col no-highlight fixed top-0 z-50 right-0 p-2"
+>
+  {#each Array(3) as _}
+    <hr
+      class="bg-white border-[1px] w-7 transition-all duration-200 my-[3px]"
+      class:close-icon={closeIcon}
+    />
+  {/each}
+</button>
 
 <nav
   style:width={`${$navView}px`}
-  class="overflow-hidden h-[100vh] inset-shadow bg-neutral-900 fixed top-0 right-0"
+  class="overflow-hidden h-[100vh] inset-shadow bg-neutral-850 fixed top-0 right-0"
 >
-  <NavOptions className="mobile-nav-options" />
+  <NavOptions className="mobile-nav-options" onClick={toggleVisible} />
   <a
     class="mobile-nav-options"
     target="_blank"
@@ -51,8 +50,8 @@
 
 <style>
   .inset-shadow {
-    -webkit-box-shadow: inset 10px 1px 20px 2px rgba(202, 155, 155, 0.63);
-    box-shadow: inset 10px 1px 20px 2px rgba(14, 14, 14, 0.404);
+    -webkit-box-shadow: inset 10px 1px 20px 2px rgba(14, 14, 14, 0.199);
+    box-shadow: inset 10px 1px 20px 2px rgba(14, 14, 14, 0.199);
   }
   .close-icon:first-child {
     @apply rotate-45 translate-y-2;

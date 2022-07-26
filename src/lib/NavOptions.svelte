@@ -12,12 +12,13 @@
   ];
 
   export let className;
+  export let onClick = () => {};
 </script>
 
 <svelte:body class="overflow-hidden" />
 
 {#each nav as { text, href }}
-  <a class={className} {href}>
+  <a class={className} {href} on:click={onClick}>
     {text}
   </a>
 {/each}
