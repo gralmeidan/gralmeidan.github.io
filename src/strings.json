@@ -1,0 +1,82 @@
+{
+  "en": {
+    "hero": {
+      "greet": "Hi, I'm",
+      "name": "Geraldo Almeida",
+      "sub": "and I do stuff sometimes.",
+      "description": "I am a Brazilian full stack web developer and currently a student at Trybe.",
+      "anchors": {
+        "portfolio": "explore works",
+        "aboutme": "about me"
+      }
+    },
+    "nav": {
+      "aboutme": "about me",
+      "portfolio": "my works",
+      "contact": "contact me"
+    },
+    "aboutme": {
+      "title": "About me",
+      "p1": "Hey! My name is Geraldo Almeida, I am ${age} years old, and I enjoy writing code. My first contact with the wonderful world of programming was making simple Discord bots with Python, and my first project with web development was an extracurricular project in high school consisting of building a mobile app with React Native.",
+      "p2": "I greatly enjoyed both experiences and have since worked towards becoming a Full Stack Web Developer by enrolling in a bootcamp and doing various projects to solidify my skills.",
+      "skills_title": "My skills"
+    },
+    "portfolio": {
+      "title": "My works"
+    },
+    "contact": {
+      "title": "Contact me",
+      "form": {
+        "name": "Name",
+        "email": "E-mail",
+        "message": "Message",
+        "submit": "Submit",
+        "feedback": {
+          "success": "Form submitted successfully!",
+          "req_err": "All fields are required.",
+          "api_err": "Something went wrong, please try again later."
+        }
+      }
+    }
+  },
+  "pt": {
+    "hero": {
+      "greet": "Ola, meu nome é",
+      "name": "Geraldo Almeida",
+      "sub": "e eu sou programador.",
+      "description": "Eu estou estudando Desenvolvimento Web Full Stack na Trybe.",
+      "anchors": {
+        "portfolio": "explorar projetos",
+        "aboutme": "sobre mim"
+      }
+    },
+    "nav": {
+      "aboutme": "sobre mim",
+      "portfolio": "meus projetos",
+      "contact": "contato"
+    },
+    "aboutme": {
+      "title": "Sobre mim",
+      "p1": "Oi! Meu nome é Geraldo Almeida, eu tenho ${age} anos, e eu amo programar. Meu primeiro contato com programação foi fazer bots de Discord com Python e meu primeiro grande projeto foi uma atividade de extensão no ensino médio que consistia no desenvolvimento de um aplicativo mobile com React Native.",
+      "p2": "Eu gostei muito de ambas as experiências e desde então eu tenho estudado para me tornar um Desenvolvedor e recentemente me matriculei em Desenvolvimento Web na Trybe e Ciências de Dados na Estácio.",
+      "skills_title": "Competências"
+    },
+    "portfolio": {
+      "title": "Meus projetos"
+    },
+    "contact": {
+      "title": "Entre em contato",
+      "form": {
+        "name": "Nome",
+        "email": "E-mail",
+        "message": "Mensagem",
+        "submit": "Enviar",
+        "feedback": {
+          "success": "E-mail enviado com sucesso!",
+          "req_err": "Favor preencher todos os campos.",
+          "api_err": "Algo deu errado, favor tentar novamente mais tarde."
+        }
+      }
+    }
+  }
+}
