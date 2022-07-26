@@ -1,11 +1,9 @@
 <nav
-  class="flex flex-col h-80 lg:h-[270px] items-center mr-10 lg:mr-16 min-w-fit"
+  class="flex flex-col items-center invisible sm:visible fixed w-[12.5%] bottom-0"
 >
-  <div />
   <a href="https://github.com/gralmeidan" target="_blank">
     <img src="./github.svg" alt="github" />
   </a>
-  <div />
   <a href="https://www.linkedin.com/in/gralmeidan/" target="_blank">
     <img src="./linkedin.svg" alt="Linkedin" />
   </a>
@@ -14,14 +12,10 @@
 
 <style>
   div {
-    @apply border-l-2 border-white h-[50px] flex-grow;
-  }
-
-  a {
-    @apply my-2;
+    @apply h-24 border-neutral-400 border rounded;
   }
 
   img {
-    @apply transition-transform hover:scale-110 ease-in;
+    @apply transition-transform hover:-translate-y-1 ease-in;
   }
 </style>
