@@ -20,7 +20,9 @@
   class:relative={htmlId !== ''}
   class={className}
 >
-  <span id={htmlId} class="-top-12 relative" />
+  {#if htmlId !== ''}
+    <span id={htmlId} class="-top-12 relative" />
+  {/if}
   {#if isInView}
     <div class="slide-top">
       <slot />

@@ -30,7 +30,7 @@
 
 <InViewDiv htmlId="aboutme">
   <article class="section relative">
-    <h1 class="ml-2">About me</h1>
+    <h1 class="ml-2">{title}</h1>
     <div class="md:flex md:items-center md:p-2">
       <section class="md:w-1/2">
         <p>

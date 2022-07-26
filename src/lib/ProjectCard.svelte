@@ -14,7 +14,7 @@
 </script>
 
 <InViewDiv className="h-[20vh]">
-  <hr class="border-neutral-800 mt-6 mb-4" />
+  <hr class="border-neutral-700 mt-6 mb-4" />
   <section class="my-2 font-roboto">
     <div class="flex justify-between">
       <h2 class="text-pink-600 font-semibold text-lg">{title}</h2>
