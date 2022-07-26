@@ -19,9 +19,9 @@
   });
 </script>
 
-<label class="block">
+<label class="block my-2">
   {name} <br class="sm:hidden" />
-  <progress use:cssVariables={{ color }} max="100" value={$prog} class="" />
+  <progress use:cssVariables={{ color }} max="100" value={$prog} class="my-1" />
 </label>
 
 <style>

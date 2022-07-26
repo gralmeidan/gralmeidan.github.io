@@ -59,7 +59,7 @@
       "title": "Sobre mim",
       "p1": "Oi! Meu nome é Geraldo Almeida, eu tenho ${age} anos, e eu amo programar. Meu primeiro contato com programação foi fazer bots de Discord com Python e meu primeiro grande projeto foi uma atividade de extensão no ensino médio que consistia no desenvolvimento de um aplicativo mobile com React Native.",
       "p2": "Eu gostei muito de ambas as experiências e desde então eu tenho estudado para me tornar um Desenvolvedor e recentemente me matriculei em Desenvolvimento Web na Trybe e Ciências de Dados na Estácio.",
-      "skills_title": "Tecnologias que eu uso"
+      "skills_title": "Competências"
     },
     "portfolio": {
       "title": "Meus projetos"

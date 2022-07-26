@@ -30,9 +30,9 @@
 
 <InViewDiv htmlId="aboutme">
   <article class="section">
-    <h1 class="ml-2">{title}</h1>
-    <div class="md:flex md:items-center md:p-2">
-      <section class="md:w-1/2">
+    <h1 class="lg:ml-2">{title}</h1>
+    <div class="lg:flex lg:items-center lg:p-2">
+      <section class="lg:w-1/2">
         <p>
           {@html p1.replace('${age}', `<code>${age}</code>`)}
         </p>
@@ -40,9 +40,11 @@
           {p2}
         </p>
       </section>
-      <InViewDiv className="md:w-1/2 md:ml-2">
-        <section class="border rounded-md p-2 border-neutral-600 md:border-0">
-          <h2 class="text-center font-semibold md:text-lg">
+      <InViewDiv className="lg:w-1/2 lg:ml-2">
+        <section
+          class="border p-2 mt-4 lg:mt-0 border-transparent border-t-neutral-700 lg:border-0"
+        >
+          <h2 class="text-center font-semibold lg:text-lg my-2 lg:mt-0">
             {skills_title}
           </h2>
           {#each skills as { name, value, color }}
