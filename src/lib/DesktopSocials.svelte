@@ -1,5 +1,5 @@
 <nav
-  class="flex flex-col items-center invisible sm:visible fixed w-[12.5%] bottom-0"
+  class="flex flex-col items-center invisible sm:visible fixed w-[12.5%] bottom-0 z-50"
 >
   <a href="https://github.com/gralmeidan" target="_blank">
     <img src="./github.svg" alt="github" />
