@@ -41,7 +41,7 @@
   },
   "pt": {
     "hero": {
-      "greet": "Ola, meu nome é",
+      "greet": "Olá, meu nome é",
       "name": "Geraldo Almeida",
       "sub": "e eu sou programador.",
       "description": "Eu estou estudando Desenvolvimento Web Full Stack na Trybe.",
