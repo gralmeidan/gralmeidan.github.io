@@ -25,8 +25,8 @@
     "tags": ["react", "jest", "react-testing-library"],
     "title": "Recipes App",
     "description": {
-      "pt": "One of the group projects I developed at Trybe. It consists of a mobile-optimized website that shows various recipes fetched from MealDB and CocktailDB, with tests made with Jest and RTL.",
-      "en": "Um dos projetos em grupo que eu desenvolvi na Trybe. Consiste em um website otimizado para telas mobile que mostra várias receitas providas pela MealDB e CocktailDB com testes escritos em Jest e RTL."
+      "pt": "Um dos projetos em grupo que eu desenvolvi na Trybe. Consiste em um website otimizado para telas mobile que mostra várias receitas providas pela MealDB e CocktailDB com testes escritos em Jest e RTL.",
+      "en": "One of the group projects I developed at Trybe. It consists of a mobile-optimized website that shows various recipes fetched from MealDB and CocktailDB, with tests made with Jest and RTL."
     },
     "href": "https://gralmeidan.github.io/trybe-recipes-app",
     "repository": "https://github.com/gralmeidan/trybe-recipes-app",
