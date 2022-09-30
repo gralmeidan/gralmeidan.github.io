@@ -18,10 +18,10 @@
   });
 
   const skills = [
-    { name: 'JavaScript', value: 85, color: '#f7df1e' },
+    { name: 'JavaScript/TypeScript', value: 90, color: '#f7df1e' },
     { name: 'React', value: 70, color: '#61dafb' },
-    { name: 'Tailwind', value: 60, color: '#07b6d5' },
-    { name: 'Svelte', value: 20, color: '#ff3e00' },
+    { name: 'Express', value: 65, color: '#07b6d5' },
+    { name: 'Svelte', value: 60, color: '#ff3e00' },
   ];
 
   const locale = getLocale();
