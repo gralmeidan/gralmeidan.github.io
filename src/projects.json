@@ -10,15 +10,14 @@
     "repository": "https://github.com/gralmeidan/gralmeidan.github.io/tree/svelte",
     "trybe": false
   },
-  "online-store": {
-    "tags": ["react", "tailwindcss"],
-    "title": "Trybe Online Store",
+  "blogs-api": {
+    "tags": ["nodejs", "expressjs", "sequelize", "jsonwebtoken", "mysql"],
+    "title": "Trybe Blog API",
     "description": {
-      "pt": "Esse é um dos projetos que eu desenvolvi na Trybe, consistindo no Front End de uma loja online utilizando-se da API do Mercado Livre para buscar produtos.",
-      "en": "This is one of the projects I developed at Trybe. It consists of a fictional online shop. We used Mercado Livre's API to fetch all the products and only developed the front end for the site."
+      "pt": "Um dos projetos desenvolvidos no módulo de Back-End da Trybe, consistiu da implementação de uma API RESTful com endpoints para realização de operações CRUD em um banco de dados relacional.",
+      "en": "One of the projects developed in Trybe's Back-End module, it consists of a RESTful API, with endpoints to perform all CRUD operations on a relational database."
     },
-    "repository": "https://github.com/gralmeidan/trybe-onlinestore",
-    "href": "https://gralmeidan.github.io/trybe-onlinestore/#/",
+    "repository": "https://github.com/gralmeidan/trybe-blog-api",
     "trybe": true
   },
   "recipesapp": {
@@ -30,6 +29,17 @@
     },
     "href": "https://gralmeidan.github.io/trybe-recipes-app",
     "repository": "https://github.com/gralmeidan/trybe-recipes-app",
+    "trybe": true
+  },
+  "online-store": {
+    "tags": ["react", "tailwindcss"],
+    "title": "Trybe Online Store",
+    "description": {
+      "pt": "Esse é um dos projetos que eu desenvolvi na Trybe, consistindo no Front End de uma loja online utilizando-se da API do Mercado Livre para buscar produtos.",
+      "en": "This is one of the projects I developed at Trybe. It consists of a fictional online shop. We used Mercado Livre's API to fetch all the products and only developed the front end for the site."
+    },
+    "repository": "https://github.com/gralmeidan/trybe-onlinestore",
+    "href": "https://gralmeidan.github.io/trybe-onlinestore/#/",
     "trybe": true
   },
   "notify": {
