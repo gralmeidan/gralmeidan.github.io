@@ -42,7 +42,7 @@
                 tag === 'react-testing-library' ? 'png' : 'svg'
               }`}
               alt={tag}
-              class="text-rose-600 w-6 h-5"
+              class="text-rose-600 w-6 h-5 object-contain"
             />
           </div>
         {/each}

@@ -10,6 +10,26 @@
     "repository": "https://github.com/gralmeidan/gralmeidan.github.io/tree/svelte",
     "trybe": false
   },
+  "tfc": {
+    "tags": [
+      "nodejs",
+      "expressjs",
+      "sequelize",
+      "jsonwebtoken",
+      "typescript",
+      "docker",
+      "mocha",
+      "chai"
+    ],
+    "title": "Trybe Futebol Clube",
+    "type": "Back-End",
+    "description": {
+      "pt": "O último projeto com foco apenas em Back-End que eu desenvolvi na Trybe, consiste em uma API Rest feita para integrar com um site de listagem de jogos de futebol.",
+      "en": "The last Back-End only project I developed at Trybe, consisting of a Restful API made to provide data to a pre-built website that lists football matches."
+    },
+    "repository": "https://github.com/gralmeidan/tfc",
+    "trybe": true
+  },
   "blogs-api": {
     "tags": ["nodejs", "expressjs", "sequelize", "jsonwebtoken", "mysql"],
     "title": "Trybe Blog API",
