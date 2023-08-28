@@ -4,7 +4,7 @@
       "greet": "Hi, I'm",
       "name": "Geraldo Almeida",
       "sub": "and I do stuff sometimes.",
-      "description": "I am a Brazilian full stack web developer and currently a student at Trybe.",
+      "description": "I am a Brazilian full stack web developer and am currently working at Devnology.",
       "anchors": {
         "portfolio": "explore works",
         "aboutme": "about me"
@@ -17,8 +17,11 @@
     },
     "aboutme": {
       "title": "About me",
-      "p1": "Hey! My name is Geraldo Almeida, I am ${age} years old, and I enjoy writing code. My first contact with the wonderful world of programming was making simple Discord bots with Python, and my first project with web development was an extracurricular project in high school consisting of building a mobile app with React Native.",
-      "p2": "I greatly enjoyed both experiences and have since worked towards becoming a Full Stack Web Developer by enrolling in a bootcamp and doing various projects to solidify my skills.",
+      "paragraphs": [
+        "I am ${age} years old and have been passionate about programming since I was <code>15</code>, when I embarked on this journey through the developmento f simple Discord bots in Python.",
+        "During high school, I also had the opportunity to collaborate on an extension project that involved developing a mobile application using React Native for the student body, which motivated me to pursue a career in the field of Web and Mobile Development.",
+        "My journey began at Trybe, where I honed my skills, and today I work at Devnology. My focus is always on delivering the best user experience and keeping up-to-date with the latest technologies in the market."
+      ],
       "skills_title": "My skills"
     },
     "portfolio": {
@@ -44,7 +47,7 @@
       "greet": "Olá, meu nome é",
       "name": "Geraldo Almeida",
       "sub": "e eu sou programador.",
-      "description": "Eu estou estudando Desenvolvimento Web Full Stack na Trybe.",
+      "description": "Atualmente estou trabalhando como Desenvolvedor Full Stack na Devnology.",
       "anchors": {
         "portfolio": "explorar projetos",
         "aboutme": "sobre mim"
@@ -57,8 +60,11 @@
     },
     "aboutme": {
       "title": "Sobre mim",
-      "p1": "Oi! Meu nome é Geraldo Almeida, eu tenho ${age} anos, e eu amo programar. Meu primeiro contato com programação foi fazer bots de Discord com Python e meu primeiro grande projeto foi uma atividade de extensão no ensino médio que consistia no desenvolvimento de um aplicativo mobile com React Native.",
-      "p2": "Eu gostei muito de ambas as experiências e desde então eu tenho estudado para me tornar um Desenvolvedor e recentemente me matriculei em Desenvolvimento Web na Trybe e Ciências de Dados na Estácio.",
+      "paragraphs": [
+        "Tenho ${age} anos e sou apaixonado por programação desde os <code>15</code> anos, quando iniciei nesta jornada através do desenvolvimento de bots simples de Discord em Python.",
+        "No ensino médio também tive a oportunidade de colaborar em um projeto de extensão que envolvia o desenvolvimento de um aplicativo mobile em React Native para uso do corpo discente, o que me motivou a buscar uma carreira na área de Desenvolvimento Web.",
+        "Minha trajetória começou na Trybe, onde pude desenvolver minhas habilidades, e hoje trabalho na Devnology. Com meu foco sempre em trazer a melhor experiência para o usuário e me atualizar com as tecnologias mais recentes do mercado."
+      ],
       "skills_title": "Competências"
     },
     "portfolio": {

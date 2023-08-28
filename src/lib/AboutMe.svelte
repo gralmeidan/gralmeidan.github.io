@@ -19,26 +19,26 @@
 
   const skills = [
     { name: 'JavaScript/TypeScript', value: 90, color: '#f7df1e' },
-    { name: 'React', value: 70, color: '#61dafb' },
-    { name: 'Express', value: 65, color: '#07b6d5' },
-    { name: 'Svelte', value: 60, color: '#ff3e00' },
+    { name: 'React', value: 80, color: '#61dafb' },
+    { name: 'Flutter', value: 80, color: '#1fbcfd' },
+    { name: 'Svelte', value: 70, color: '#FF2A2A' },
+    { name: 'Nest', value: 55, color: '#e0234e' },
   ];
 
   const locale = getLocale();
-  const { title, p1, p2, skills_title } = strings[locale].aboutme;
+  const { title, paragraphs, skills_title } = strings[locale].aboutme;
 </script>
 
 <InViewDiv htmlId="aboutme">
   <article class="section">
     <h1 class="lg:ml-2">{title}</h1>
-    <div class="lg:flex lg:items-center lg:p-2">
+    <div class="lg:flex lg:items-start lg:p-2">
       <section class="lg:w-1/2">
-        <p>
-          {@html p1.replace('${age}', `<code>${age}</code>`)}
-        </p>
-        <p>
-          {p2}
-        </p>
+        {#each paragraphs as paragraph}
+          <p>
+            {@html paragraph.replace('${age}', `<code>${age}</code>`)}
+          </p>
+        {/each}
       </section>
       <InViewDiv className="lg:w-1/2 lg:ml-2">
         <section
