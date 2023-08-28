@@ -9,7 +9,7 @@
     "prepare": "svelte-kit sync",
     "lint": "prettier --check --plugin-search-dir=. . && eslint .",
     "format": "prettier --write --plugin-search-dir=. .",
-    "deploy": "node ./gh-pages.js"
+    "deploy": "npm run build && node ./gh-pages.js"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",

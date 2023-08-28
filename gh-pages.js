@@ -11,7 +11,11 @@ publish(
     },
     dotfiles: true,
   },
-  () => {
-    console.log('Deploy Complete!');
+  e => {
+    if (e) {
+      console.log('Deploy error', e);
+    } else {
+      console.log('Deploy Complete!');
+    }
   }
 );
