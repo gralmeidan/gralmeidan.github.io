@@ -1,6 +1,9 @@
 {
   "portfolio": {
-    "tags": ["svelte", "tailwindcss"],
+    "tags": [
+      "svelte",
+      "tailwindcss"
+    ],
     "title": "Portfolio",
     "type": "Front-End",
     "description": {
@@ -8,6 +11,35 @@
       "en": "It's the page you're in right now."
     },
     "repository": "https://github.com/gralmeidan/gralmeidan.github.io/tree/svelte",
+    "trybe": false
+  },
+  "rentalcars": {
+    "tags": [
+      "react",
+      "chakraui.png",
+      "php",
+      "mysql"
+    ],
+    "title": "123 Carros",
+    "description": {
+      "pt": "Um dos projetos em que eu colaborei enquanto trabalhava na Devnology, consiste em um site de aluguel de carros desenvolvido para a 123milhas em parceria com a Localiza.",
+      "en": "One of the projects I collaborated on while working at Devnology, this is a car rental website developed for 123milhas in partnership with Localiza."
+    },
+    "href": "https://123milhas.com/carros",
+    "trybe": false
+  },
+  "whitelabel": {
+    "tags": [
+      "flutter",
+      "nestjs",
+      "mysql"
+    ],
+    "title": "123 WhiteLabel",
+    "description": {
+      "pt": "O maior projeto que eu desenvolvi na Devnology, se trata de um front-end com branding customizável que apresenta ofertas especiais da 123milhas em passagens aéreas e reservas de hotéis. Tudo construído com uma estrutura de submódulos re-utilizáveis, permitindo sua integração em outros projetos, como o app 123milhas para Android e iOS.",
+      "en": "The largest project I developed at Devnology, consisting of a front-end with customizable branding, showcasing special offers from 123milhas for airline tickets and hotel bookings. All built using a structure of reusable submodules, enabling their integration into other projects, such as the 123milhas app for Android and iOS."
+    },
+    "href": "https://viagens.parceiros.123milhas.com/",
     "trybe": false
   },
   "tfc": {
@@ -22,7 +54,6 @@
       "chai"
     ],
     "title": "Trybe Futebol Clube",
-    "type": "Back-End",
     "description": {
       "pt": "O último projeto com foco apenas em Back-End que eu desenvolvi na Trybe, consiste em uma API Rest feita para integrar com um site de listagem de jogos de futebol.",
       "en": "The last Back-End only project I developed at Trybe, consisting of a Restful API made to provide data to a pre-built website that lists football matches."
@@ -31,17 +62,28 @@
     "trybe": true
   },
   "blogs-api": {
-    "tags": ["nodejs", "expressjs", "sequelize", "jsonwebtoken", "mysql"],
+    "tags": [
+      "nodejs",
+      "expressjs",
+      "sequelize",
+      "jsonwebtoken",
+      "mysql"
+    ],
     "title": "Trybe Blog API",
     "description": {
       "pt": "Um dos projetos desenvolvidos no módulo de Back-End da Trybe, consistiu da implementação de uma API RESTful com endpoints para realização de operações CRUD em um banco de dados relacional.",
       "en": "One of the projects developed in Trybe's Back-End module, it consists of a RESTful API, with endpoints to perform all CRUD operations on a relational database."
     },
     "repository": "https://github.com/gralmeidan/trybe-blog-api",
-    "trybe": true
+    "trybe": true,
+    "hidden": true
   },
   "recipesapp": {
-    "tags": ["react", "jest", "react-testing-library"],
+    "tags": [
+      "react",
+      "jest",
+      "react-testing-library.png"
+    ],
     "title": "Recipes App",
     "description": {
       "pt": "Um dos projetos em grupo que eu desenvolvi na Trybe. Consiste em um website otimizado para telas mobile que mostra várias receitas providas pela MealDB e CocktailDB com testes escritos em Jest e RTL.",
@@ -52,7 +94,10 @@
     "trybe": true
   },
   "online-store": {
-    "tags": ["react", "tailwindcss"],
+    "tags": [
+      "react",
+      "tailwindcss"
+    ],
     "title": "Trybe Online Store",
     "description": {
       "pt": "Esse é um dos projetos que eu desenvolvi na Trybe, consistindo no Front End de uma loja online utilizando-se da API do Mercado Livre para buscar produtos.",
@@ -60,10 +105,14 @@
     },
     "repository": "https://github.com/gralmeidan/trybe-onlinestore",
     "href": "https://gralmeidan.github.io/trybe-onlinestore/#/",
-    "trybe": true
+    "trybe": true,
+    "hidden": true
   },
   "notify": {
-    "tags": ["react-native", "firebase"],
+    "tags": [
+      "react-native",
+      "firebase"
+    ],
     "title": "NotIFy",
     "description": {
       "pt": "Esse é o projeto de extensão que eu mencionei. Foi meu primeiro projeto de verdade com programação e por mais que no final o projeto não tenha sido continuado pela instituição, o processo de desenvolvimento foi muito divertido e todos nós ficamos felizes com o resultado.",

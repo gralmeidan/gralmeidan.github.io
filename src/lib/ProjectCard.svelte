@@ -10,7 +10,15 @@
 
   const locale = getLocale();
 
-  console.log(locale);
+  const _addFileExt = tag => {
+    if (!tag.match(/\.\w+$/)) {
+      tag += '.svg';
+    }
+
+    return `./icons/${tag}`;
+  };
+
+  const _trimFileExt = tag => tag.replace(/\.\w+$/, '');
 </script>
 
 <InViewDiv className="h-[20vh]">
@@ -36,24 +44,24 @@
             class="tooltip pr-1"
             style:margin-right={tag === 'svelte' && '-3px'}
           >
-            <div>{tag}</div>
+            <div>{_trimFileExt(tag)}</div>
             <img
-              src={`./icons/${tag}.${
-                tag === 'react-testing-library' ? 'png' : 'svg'
-              }`}
-              alt={tag}
+              src={_addFileExt(tag)}
+              alt={_trimFileExt(tag)}
               class="text-rose-600 w-6 h-5 object-contain"
             />
           </div>
         {/each}
       </div>
-      <a href={repository} target="_blank" class="no-highlight">
-        <img
-          src="./github-norect.svg"
-          class="w-5 h-5 scale-[2.3]"
-          alt="Repository"
-        />
-      </a>
+      {#if repository}
+        <a href={repository} target="_blank" class="no-highlight">
+          <img
+            src="./github-norect.svg"
+            class="w-5 h-5 scale-[2.3]"
+            alt="Repository"
+          />
+        </a>
+      {/if}
     </div>
   </section>
 </InViewDiv>

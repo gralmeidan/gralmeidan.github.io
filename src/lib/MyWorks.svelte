@@ -6,12 +6,14 @@
   import getLocale from '../helpers/getLocale';
 
   const locale = getLocale();
+
+  const projectList = Object.values(projects).filter(({ hidden }) => !hidden);
 </script>
 
 <InViewDiv className="relative" htmlId="portfolio">
   <section class="section">
     <h1>{strings[locale].portfolio.title}</h1>
-    {#each Object.values(projects) as project}
+    {#each projectList as project}
       <ProjectCard {...project} />
     {/each}
   </section>
