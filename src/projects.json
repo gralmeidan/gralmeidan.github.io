@@ -13,6 +13,45 @@
     "repository": "https://github.com/gralmeidan/gralmeidan.github.io/tree/svelte",
     "trybe": false
   },
+  "busca-agente": {
+    "tags": [
+      "flutter",
+      "nestjs",
+      "mysql"
+    ],
+    "title": "Buscamilhas Agentes",
+    "description": {
+      "pt": "Um sistema de busca de milhas para agentes de viagens, possibilitando a busca das melhores passagens aéreas com milhas e tarifado em múltiplas companhias aéreas. O projeto foi desenvolvido com Flutter e NestJS, tendo sido lançado para as plataformas Web, Android e iOS.",
+      "en": "A flight search system for travel agents, allowing them to find the best airline tickets using loyalty points or standard fares and compare prices across multiple airlines. The project was developed with Flutter and NestJS, and was deployed on Web, Android, and iOS platforms."
+    },
+    "href": "https://buscamilhas.com/passagens-aereas-com-milhas/",
+    "trybe": false
+  },
+  "backoffice": {
+    "tags": [
+      "react",
+      "nestjs",
+      "jest",
+      "mysql"
+    ],
+    "title": "Devnology Backoffice",
+    "description": {
+      "pt": "Uma ferramenta interna para os times de desenvolvimento da Devnology, permitindo o gerenciamento fácil de configurações e variáveis em múltiplos projetos simultaneamente, com uma interface amigável para as equipes administrativas e de suporte. O projeto foi desenvolvido com React e NestJS, incluindo uma biblioteca de componentes reutilizáveis e uma API performática e escalável para recuperação de dados em grande escala.",
+      "en": "An internal tool for Devnology's development teams, enabling easy management of configurations and variables across multiple projects at once, with a user-friendly interface for administrative and support teams. The project was developed with React and NestJS, featuring a reusable component library and a high-performance, scalable API for large-scale data retrieval."
+    },
+    "trybe": false
+  },
+  "hackermime": {
+    "tags": [
+      "typescript"
+    ],
+    "title": "HackerMime",
+    "description": {
+      "pt": "Uma ferramenta sofisticada que oferece uma estrutura para contornar sistemas avançados de Anti-Bot com uma taxa de sucesso superior a 90%, demonstrando habilidades avançadas em resolução de problemas, engenharia reversa e análise de segurança.",
+      "en": "A sophisticated tool that provides a framework for bypassing advanced anti-bot systems with a success rate above 90%, demonstrating advanced problem-solving, reverse engineering, and security analysis skills."
+    },
+    "href": "https://devnology.com.br/"
+  },
   "rentalcars": {
     "tags": [
       "react",
@@ -20,13 +59,26 @@
       "php",
       "mysql"
     ],
-    "title": "123 Carros",
+    "title": "Carros 123 Milhas",
     "description": {
       "pt": "Um dos projetos em que eu colaborei enquanto trabalhava na Devnology, consiste em um site de aluguel de carros desenvolvido para a 123milhas em parceria com a Localiza.",
       "en": "One of the projects I collaborated on while working at Devnology, this is a car rental website developed for 123milhas in partnership with Localiza."
     },
     "href": "https://123milhas.com/carros",
-    "trybe": false
+    "trybe": false,
+    "hidden": true
+  },
+  "123-app": {
+    "tags": [
+      "flutter",
+      "firebase"
+    ],
+    "title": "Aplicativo 123 Milhas",
+    "description": {
+      "pt": "Um aplicativo desenvolvido para a 123milhas através da Devnology, permitindo que os usuários busquem passagens aéreas e reservas de hotéis. O projeto foi desenvolvido com Flutter e Firebase, e está disponível para Android e iOS. Com uma estrutura em módulos reutilizável, para fácil integração em outros projetos.",
+      "en": "An app developed for 123milhas through Devnology, allowing users to search for airline tickets and hotel bookings. The project was developed with Flutter and Firebase, and is available for Android and iOS. It features a reusable module structure for easy integration into other projects."
+    },
+    "href": "https://play.google.com/store/apps/details?id=com.a123milhas.app"
   },
   "whitelabel": {
     "tags": [
@@ -40,7 +92,8 @@
       "en": "The largest project I developed at Devnology, consisting of a front-end with customizable branding, showcasing special offers from 123milhas for airline tickets and hotel bookings. All built using a structure of reusable submodules, enabling their integration into other projects, such as the 123milhas app for Android and iOS."
     },
     "href": "https://viagens.parceiros.123milhas.com/",
-    "trybe": false
+    "trybe": false,
+    "hidden": true
   },
   "tfc": {
     "tags": [
@@ -59,7 +112,8 @@
       "en": "The last Back-End only project I developed at Trybe, consisting of a Restful API made to provide data to a pre-built website that lists football matches."
     },
     "repository": "https://github.com/gralmeidan/tfc",
-    "trybe": true
+    "trybe": true,
+    "hidden": true
   },
   "blogs-api": {
     "tags": [
@@ -91,7 +145,8 @@
     },
     "href": "https://gralmeidan.github.io/trybe-recipes-app",
     "repository": "https://github.com/gralmeidan/trybe-recipes-app",
-    "trybe": true
+    "trybe": true,
+    "hidden": true
   },
   "online-store": {
     "tags": [

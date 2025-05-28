@@ -4,7 +4,7 @@
       "greet": "Hi, I'm",
       "name": "Geraldo Almeida",
       "sub": "and I do stuff sometimes.",
-      "description": "I am a Brazilian full stack web developer and am currently working at Devnology.",
+      "description": "I am a Brazilian full stack web and mobile developer and am currently working at Devnology.",
       "anchors": {
         "portfolio": "explore works",
         "aboutme": "about me"
@@ -18,7 +18,7 @@
     "aboutme": {
       "title": "About me",
       "paragraphs": [
-        "I am ${age} years old and have been passionate about programming since I was <code>15</code>, when I embarked on this journey through the developmento f simple Discord bots in Python.",
+        "I am ${age} years old and have been passionate about programming since I was <code>15</code>, when I embarked on this journey through the development of simple Discord bots in Python.",
         "During high school, I also had the opportunity to collaborate on an extension project that involved developing a mobile application using React Native for the student body, which motivated me to pursue a career in the field of Web and Mobile Development.",
         "My journey began at Trybe, where I honed my skills, and today I work at Devnology. My focus is always on delivering the best user experience and keeping up-to-date with the latest technologies in the market."
       ],
@@ -63,7 +63,7 @@
       "paragraphs": [
         "Tenho ${age} anos e sou apaixonado por programação desde os <code>15</code> anos, quando iniciei nesta jornada através do desenvolvimento de bots simples de Discord em Python.",
         "No ensino médio também tive a oportunidade de colaborar em um projeto de extensão que envolvia o desenvolvimento de um aplicativo mobile em React Native para uso do corpo discente, o que me motivou a buscar uma carreira na área de Desenvolvimento Web.",
-        "Minha trajetória começou na Trybe, onde pude desenvolver minhas habilidades, e hoje trabalho na Devnology. Com meu foco sempre em trazer a melhor experiência para o usuário e me atualizar com as tecnologias mais recentes do mercado."
+        "Me matriculei no curso de Sistemas de Informação na UNEMAT, e atualmente trabalho na Devnology. Com meu foco sempre em trazer a melhor experiência para o usuário e me atualizar com as tecnologias mais recentes do mercado."
       ],
       "skills_title": "Competências"
     },
